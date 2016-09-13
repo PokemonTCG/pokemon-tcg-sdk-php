@@ -1,0 +1,6 @@
+# Composer
+vendor
+composer.lock
+
+# PhpStorm
+.idea
