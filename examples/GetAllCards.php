@@ -2,8 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$pokemon = new \Pokemon\Pokemon();
-//print_r($pokemon->cards()->all());
+$response = \Pokemon\Pokemon::Type()->all();
+print_r($response);
 
-
-print_r($pokemon->cards()->where('name', 'Shaymin')->where('subtype', 'EX')->all());
+$response = \Pokemon\Pokemon::Card()->find('xy7-54');
+print_r($response);

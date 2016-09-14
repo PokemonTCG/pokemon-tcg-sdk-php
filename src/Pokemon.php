@@ -2,9 +2,11 @@
 
 namespace Pokemon;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
-use Psr\Http\Message\ResponseInterface;
+use Pokemon\Resources\ArrayDataResource;
+use Pokemon\Resources\CardResource;
+use Pokemon\Resources\Interfaces\QueriableResourceInterface;
+use Pokemon\Resources\Interfaces\ResourceInterface;
+use Pokemon\Resources\QueriableResource;
 
 /**
  * Class Pokemon
@@ -16,87 +18,42 @@ class Pokemon
     const API_URL = 'https://api.pokemontcg.io/v1/';
 
     /**
-     * @var Client
+     * @return QueriableResourceInterface
      */
-    protected $client;
-
-    /**
-     * @var string
-     */
-    protected $method = 'GET';
-
-    /**
-     * @var string
-     */
-    protected $uri = '';
-
-    /**
-     * @var array
-     */
-    protected $headers = [];
-
-    /**
-     * @var array
-     */
-    protected $params = [];
-
-    /**
-     * Pokemon constructor.
-     */
-    public function __construct()
+    public static function Card()
     {
-        $this->client = new Client([
-            'base_uri' => self::API_URL
-        ]);
+        return new CardResource('cards');
     }
 
     /**
-     * @return Request
+     * @return QueriableResourceInterface
      */
-    protected function buildRequest()
+    public static function Set()
     {
-        if (!empty($this->params)) {
-            $this->uri = $this->uri . '?' . http_build_query($this->params);
-        }
-        return new Request($this->method, $this->uri, $this->headers);
+        return new QueriableResource('sets');
     }
 
     /**
-     * @param ResponseInterface $response
-     *
-     * @return string
+     * @return ResourceInterface
      */
-    protected function parseRequest(ResponseInterface $response)
+    public static function Type()
     {
-        return $response->getBody()->getContents();
+        return new ArrayDataResource('types');
     }
 
     /**
-     * @return Pokemon
+     * @return ResourceInterface
      */
-    public function cards()
+    public static function Supertype()
     {
-        $this->uri = 'cards';
-        return $this;
+        return new ArrayDataResource('supertypes');
     }
 
     /**
-     * @param $parameter
-     * @param $query
-     *
-     * @return Pokemon
+     * @return ResourceInterface
      */
-    public function where($parameter, $query)
+    public static function Subtype()
     {
-        $this->params = array_merge($this->params, [$parameter => $query]);
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function all()
-    {
-        return $this->parseRequest($this->client->send($this->buildRequest()));
+        return new ArrayDataResource('subtypes');
     }
 }
