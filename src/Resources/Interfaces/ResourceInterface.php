@@ -10,7 +10,7 @@ namespace Pokemon\Resources\Interfaces;
 interface ResourceInterface
 {
     /**
-     * @return mixed
+     * @return array
      */
     public function all();
 

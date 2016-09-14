@@ -2,6 +2,8 @@
 
 namespace Pokemon\Resources\Interfaces;
 
+use Pokemon\Models\Model;
+
 /**
  * Interface QueriableResourceInterface
  *
@@ -20,7 +22,7 @@ interface QueriableResourceInterface extends ResourceInterface
     /**
      * @param string $identifier
      *
-     * @return mixed
+     * @return Model|null
      */
     public function find($identifier);
     

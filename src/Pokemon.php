@@ -2,10 +2,9 @@
 
 namespace Pokemon;
 
-use Pokemon\Resources\ArrayDataResource;
-use Pokemon\Resources\CardResource;
 use Pokemon\Resources\Interfaces\QueriableResourceInterface;
 use Pokemon\Resources\Interfaces\ResourceInterface;
+use Pokemon\Resources\JsonResource;
 use Pokemon\Resources\QueriableResource;
 
 /**
@@ -18,42 +17,52 @@ class Pokemon
     const API_URL = 'https://api.pokemontcg.io/v1/';
 
     /**
+     * @param array $options
+     *
      * @return QueriableResourceInterface
      */
-    public static function Card()
+    public static function Card(array $options = [])
     {
-        return new CardResource('cards');
+        return new QueriableResource('cards', $options);
     }
 
     /**
+     * @param array $options
+     *
      * @return QueriableResourceInterface
      */
-    public static function Set()
+    public static function Set(array $options = [])
     {
-        return new QueriableResource('sets');
+        return new QueriableResource('sets', $options);
     }
 
     /**
+     * @param array $options
+     *
      * @return ResourceInterface
      */
-    public static function Type()
+    public static function Type(array $options = [])
     {
-        return new ArrayDataResource('types');
+        return new JsonResource('types', $options);
     }
 
     /**
+     * @param array $options
+     *
      * @return ResourceInterface
      */
-    public static function Supertype()
+    public static function Supertype(array $options = [])
     {
-        return new ArrayDataResource('supertypes');
+        return new SupertypeResource('supertypes', $options);
     }
 
     /**
+     * @param array $options
+     *
      * @return ResourceInterface
      */
-    public static function Subtype()
+    public static function Subtype(array $options = [])
     {
-        return new ArrayDataResource('subtypes');
+        return new SubtypeResource('subtypes', $options);
     }
 }

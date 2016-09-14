@@ -57,6 +57,11 @@ class Card extends Model
     /**
      * @var string
      */
+    private $text;
+
+    /**
+     * @var string
+     */
     private $number;
 
     /**
@@ -103,6 +108,11 @@ class Card extends Model
      * @var array
      */
     private $resistances;
+
+    /**
+     * @var AncientTrait
+     */
+    private $ancientTrait;
 
     /**
      * @return string
@@ -246,6 +256,22 @@ class Card extends Model
     public function setRetreatCost($retreatCost)
     {
         $this->retreatCost = $retreatCost;
+    }
+
+    /**
+     * @return string
+     */
+    public function getText()
+    {
+        return $this->text;
+    }
+
+    /**
+     * @param string $text
+     */
+    public function setText($text)
+    {
+        $this->text = $text;
     }
 
     /**
@@ -409,58 +435,18 @@ class Card extends Model
     }
 
     /**
-     * @param mixed $data
-     *
-     * @return Model
+     * @return AncientTrait
      */
-    public function populate($data)
+    public function getAncientTrait()
     {
-        $this->setId($this->process('id', $data, ''));
-        $this->setName($this->process('name', $data, ''));
-        $this->setNationalPokedexNumber($this->process('nationalPokedexNumber', $data, ''));
-        $this->setImageUrl($this->process('imageUrl', $data, ''));
-        $this->setSubtype($this->process('subtype', $data, ''));
-        $this->setSupertype($this->process('supertype', $data, ''));
-        $this->setAbility(new Ability($this->process('ability', $data, null)));
-        $this->setHp($this->process('hp', $data, ''));
-        $this->setRetreatCost($this->process('retreatCost', $data, []));
-        $this->setNumber($this->process('number', $data, ''));
-        $this->setArtist($this->process('artist', $data, ''));
-        $this->setRarity($this->process('rarity', $data, ''));
-        $this->setSeries($this->process('series', $data, ''));
-        $this->setSet($this->process('set', $data, ''));
-        $this->setSetCode($this->process('setCode', $data, ''));
-        $this->setTypes($this->process('types', $data, []));
-        $this->setAttacks($this->process('attacks', $data, []));
-        $this->setWeaknesses($this->process('weaknesses', $data, []));
-        $this->setResistances($this->process('resistances', $data, []));
+        return $this->ancientTrait;
     }
 
     /**
-     * @return array
+     * @param AncientTrait $ancientTrait
      */
-    public function toArray()
+    public function setAncientTrait(AncientTrait $ancientTrait)
     {
-        return [
-            'id'                    => $this->getId(),
-            'name'                  => $this->getName(),
-            'nationalPokedexNumber' => $this->getNationalPokedexNumber(),
-            'imageUrl'              => $this->getImageUrl(),
-            'subtype'               => $this->getSubtype(),
-            'supertype'             => $this->getSupertype(),
-            'ability'               => $this->getAbility(),
-            'hp'                    => $this->getHp(),
-            'retreatCost'           => $this->getRetreatCost(),
-            'number'                => $this->getNumber(),
-            'artist'                => $this->getArtist(),
-            'rarity'                => $this->getRarity(),
-            'series'                => $this->getSeries(),
-            'set'                   => $this->getSet(),
-            'setCode'               => $this->getSetCode(),
-            'types'                 => $this->getTypes(),
-            'attacks'               => $this->getAttacks(),
-            'weaknesses'            => $this->getWeaknesses(),
-            'resistances'           => $this->getResistances(),
-        ];
+        $this->ancientTrait = $ancientTrait;
     }
 }

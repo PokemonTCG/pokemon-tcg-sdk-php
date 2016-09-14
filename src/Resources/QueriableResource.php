@@ -2,15 +2,18 @@
 
 namespace Pokemon\Resources;
 
+use Doctrine\Common\Inflector\Inflector;
 use GuzzleHttp\Psr7\Request;
+use Pokemon\Models\Model;
 use Pokemon\Resources\Interfaces\QueriableResourceInterface;
+use stdClass;
 
 /**
  * Class QueriableResource
  *
  * @package Pokemon\Resources
  */
-class QueriableResource extends Resource implements QueriableResourceInterface
+class QueriableResource extends JsonResource implements QueriableResourceInterface
 {
     /**
      * @var array
@@ -49,19 +52,53 @@ class QueriableResource extends Resource implements QueriableResourceInterface
      */
     public function where($parameter, $value)
     {
-        $this->query = array_merge($this->query, [$parameter, $value]);
+        $this->query = array_merge($this->query, [$parameter => $value]);
         return $this;
+    }
+
+    /**
+     * @param stdClass $data
+     *
+     * @return array
+     */
+    protected function transformAll(stdClass $data)
+    {
+        $name = $this->getFirstPropertyName($data);
+        return array_map(function ($data) use ($name) {
+            return $this->transform($data, $name);
+        }, $this->getFirstProperty($data));
+    }
+
+    /**
+     * @param stdClass $data
+     *
+     * @return Model|null
+     */
+    protected function transform(stdClass $data, $className = null)
+    {
+        $data = !empty($className) ? $data : $this->getFirstProperty($data);
+        $name = !empty($className) ? $className : $this->getFirstPropertyName($data);
+        $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($name));
+        if (class_exists($class)) {
+            /** @var Model $model */
+            $model = new $class;
+            $model->fill($data);
+            return $model;
+        }
+
+        return null;
     }
 
     /**
      * @param string $identifier
      *
-     * @return mixed
+     * @return Model|null
      */
     public function find($identifier)
     {
         $this->identifier = $identifier;
-        return $this->parseResponse($this->client->send($this->prepare()));
+        $data = $this->getResponseData($this->client->send($this->prepare()));
+        return $this->transform($data);
     }
 
 }

@@ -3,11 +3,11 @@
 namespace Pokemon\Models;
 
 /**
- * Class Ability
+ * Class AncientTrait
  *
  * @package Pokemon\Models
  */
-class Ability extends Model
+class AncientTrait extends Model
 {
     /**
      * @var string
