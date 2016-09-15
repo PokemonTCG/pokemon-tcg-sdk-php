@@ -4,7 +4,14 @@ use Pokemon\Pokemon;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$options = ['verify' => true];
+/**
+ * Change 'verify' option to true to fix the following error:
+ *
+ * Fatal error: Uncaught exception 'GuzzleHttp\Exception\ConnectException' with message
+ * 'cURL error 35: Unknown SSL protocol error in connection to api.pokemontcg.io:-9838
+ * (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'
+ */
+$options = ['verify' => false];
 
 /**
  * Get a single card
