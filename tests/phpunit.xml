@@ -1,0 +1,9 @@
+<phpunit
+    bootstrap="./vendor/autoload.php"
+    colors="true"
+    mapTestClassNameToCoveredClassName="true">
+
+    <php>
+        <env name="CLIENT_OPTION_VERIFY" value="false"/>
+    </php>
+</phpunit>

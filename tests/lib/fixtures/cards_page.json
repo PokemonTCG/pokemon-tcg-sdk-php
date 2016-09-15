@@ -1,0 +1,403 @@
+{
+    "cards": [
+        {
+            "id": "xy7-1",
+            "name": "Oddish",
+            "nationalPokedexNumber": 43,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/1.png",
+            "subtype": "Basic",
+            "supertype": "Pokémon",
+            "hp": "50",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "1",
+            "artist": "MAHOU",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass"
+                    ],
+                    "name": "Trip Over",
+                    "text": "Flip a coin. If heads, this attack does 10 more damage.",
+                    "damage": "10+",
+                    "convertedEnergyCost": 1
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-2",
+            "name": "Gloom",
+            "nationalPokedexNumber": 44,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/2.png",
+            "subtype": "Stage 1",
+            "supertype": "Pokémon",
+            "hp": "80",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "2",
+            "artist": "Masakazu Fukuda",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Drool",
+                    "text": "",
+                    "damage": "30",
+                    "convertedEnergyCost": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-3",
+            "name": "Vileplume",
+            "nationalPokedexNumber": 45,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/3.png",
+            "subtype": "Stage 2",
+            "supertype": "Pokémon",
+            "ability": {
+                "name": "Irritating Pollen",
+                "text": "Each player can't play any Item cards from his or her hand."
+            },
+            "hp": "130",
+            "retreatCost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+            ],
+            "number": "3",
+            "artist": "Midori Harada",
+            "rarity": "Rare",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass",
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Solar Beam",
+                    "text": "",
+                    "damage": "70",
+                    "convertedEnergyCost": 3
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-4",
+            "name": "Bellossom",
+            "nationalPokedexNumber": 182,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/4.png",
+            "subtype": "Stage 2",
+            "supertype": "Pokémon",
+            "hp": "120",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "4",
+            "artist": "Mizue",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass"
+                    ],
+                    "name": "Windmill",
+                    "text": "Switch this Pokémon with 1 of your Benched Pokémon.",
+                    "damage": "20",
+                    "convertedEnergyCost": 1
+                },
+                {
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Flower Tornado",
+                    "text": "Move as many Grass Energy attached to your Pokémon to your other Pokémon in any way you like.",
+                    "damage": "60",
+                    "convertedEnergyCost": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-5",
+            "name": "Spinarak",
+            "nationalPokedexNumber": 167,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/5.png",
+            "subtype": "Basic",
+            "supertype": "Pokémon",
+            "hp": "50",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "5",
+            "artist": "Naoyo Kimura",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Colorless"
+                    ],
+                    "name": "String Shot",
+                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+                    "damage": "",
+                    "convertedEnergyCost": 1
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-6",
+            "name": "Ariados",
+            "nationalPokedexNumber": 168,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/6.png",
+            "subtype": "Stage 1",
+            "supertype": "Pokémon",
+            "ability": {
+                "name": "Poisonous Nest",
+                "text": "Once during your turn (before your attack), you may use this Ability. Both Active Pokémon (except for Grass Pokémon) are now Poisoned."
+            },
+            "hp": "70",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "6",
+            "artist": "Hajime Kusajima",
+            "rarity": "Uncommon",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Impound",
+                    "text": "The Defending Pokémon can't retreat during your opponent's next turn.",
+                    "damage": "30",
+                    "convertedEnergyCost": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-7",
+            "name": "Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/7.png",
+            "subtype": "EX",
+            "supertype": "Pokémon",
+            "hp": "170",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "7",
+            "artist": "Eske Yoshinob",
+            "rarity": "Rare Holo EX",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "text": [
+                "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass"
+                    ],
+                    "name": "Sleep Poison",
+                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep and Poisoned.",
+                    "damage": "10",
+                    "convertedEnergyCost": 1
+                },
+                {
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Unseen Claw",
+                    "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 70 more damage.",
+                    "damage": "60+",
+                    "convertedEnergyCost": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-8",
+            "name": "M Sceptile-EX",
+            "nationalPokedexNumber": 254,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/8.png",
+            "subtype": "MEGA",
+            "supertype": "Pokémon",
+            "hp": "220",
+            "retreatCost": [
+                "Colorless",
+                "Colorless"
+            ],
+            "number": "8",
+            "artist": "5ban Graphics",
+            "rarity": "Rare Holo EX",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "text": [
+                "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+                "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon.",
+                "When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends."
+            ],
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass",
+                        "Colorless"
+                    ],
+                    "name": "Jagged Saber",
+                    "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pokémon in any way you like. If you attached Energy to a Pokémon in this way, heal all damage from that Pokémon.",
+                    "damage": "100",
+                    "convertedEnergyCost": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "xy7-9",
+            "name": "Combee",
+            "nationalPokedexNumber": 415,
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/9.png",
+            "subtype": "Basic",
+            "supertype": "Pokémon",
+            "hp": "40",
+            "retreatCost": [
+                "Colorless"
+            ],
+            "number": "9",
+            "artist": "Sumiyoshi Kizuki",
+            "rarity": "Common",
+            "series": "XY",
+            "set": "Ancient Origins",
+            "setCode": "xy7",
+            "types": [
+                "Grass"
+            ],
+            "attacks": [
+                {
+                    "cost": [
+                        "Grass"
+                    ],
+                    "name": "Bug Bite",
+                    "text": "",
+                    "damage": "10",
+                    "convertedEnergyCost": 1
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "Fire",
+                    "value": "×2"
+                }
+            ]
+        },
+        {
+            "id": "gym1-132",
+            "name": "Water Energy",
+            "imageUrl": "https://s3.amazonaws.com/pokemontcg/gym1/132.jpg",
+            "subtype": "Basic",
+            "supertype": "Energy",
+            "number": "132",
+            "artist": "Keiji Kinebuchi",
+            "rarity": "Common",
+            "series": "Gym",
+            "set": "Gym Heroes",
+            "setCode": "gym1"
+        }
+    ]
+}

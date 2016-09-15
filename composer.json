@@ -1,6 +1,7 @@
 {
     "name": "mmonkey/pokemon-tcg-sdk-php",
     "description": "This is the Pokémon TCG SDK Python implementaHP It is a wrapper around the Pokémon TCG API of pokemontcg.io.",
+    "keywords": ["pokemon", "tcg", "sdk"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -20,5 +21,10 @@
         "psr-4": {
             "Pokemon\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/lib/"
+        ]
     }
 }

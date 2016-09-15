@@ -1,0 +1,52 @@
+{
+    "card": {
+        "id": "xy7-57",
+        "name": "Giratina-EX",
+        "nationalPokedexNumber": 487,
+        "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/57.png",
+        "subtype": "EX",
+        "supertype": "Pokémon",
+        "ability": {
+            "name": "Renegade Pulse",
+            "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Mega Evolution Pokémon."
+        },
+        "hp": "170",
+        "retreatCost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+        ],
+        "number": "57",
+        "artist": "PLANETA",
+        "rarity": "Rare Holo EX",
+        "series": "XY",
+        "set": "Ancient Origins",
+        "setCode": "xy7",
+        "text": [
+            "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+        ],
+        "types": [
+            "Dragon"
+        ],
+        "attacks": [
+            {
+                "cost": [
+                    "Grass",
+                    "Psychic",
+                    "Colorless",
+                    "Colorless"
+                ],
+                "name": "Chaos Wheel",
+                "text": "Your opponent can't play any Pokémon Tool, Special Energy, or Stadium cards from his or her hand during his or her next turn.",
+                "damage": "100",
+                "convertedEnergyCost": 4
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fairy",
+                "value": "×2"
+            }
+        ]
+    }
+}
