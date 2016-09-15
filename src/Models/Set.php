@@ -45,7 +45,7 @@ class Set extends Model
      */
     public function getCode()
     {
-        return $this->code;
+        return (string)$this->code;
     }
 
     /**
@@ -61,7 +61,7 @@ class Set extends Model
      */
     public function getName()
     {
-        return $this->name;
+        return (string)$this->name;
     }
 
     /**
@@ -77,7 +77,7 @@ class Set extends Model
      */
     public function getSeries()
     {
-        return $this->series;
+        return (string)$this->series;
     }
 
     /**
@@ -93,7 +93,7 @@ class Set extends Model
      */
     public function getTotalCards()
     {
-        return $this->totalCards;
+        return (int)$this->totalCards;
     }
 
     /**
@@ -109,7 +109,7 @@ class Set extends Model
      */
     public function isStandardLegal()
     {
-        return $this->standardLegal;
+        return (boolean)$this->standardLegal;
     }
 
     /**
@@ -125,7 +125,7 @@ class Set extends Model
      */
     public function getReleaseDate()
     {
-        return $this->releaseDate;
+        return (string)$this->releaseDate;
     }
 
     /**

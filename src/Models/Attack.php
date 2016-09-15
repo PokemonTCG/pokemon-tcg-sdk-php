@@ -39,7 +39,7 @@ class Attack extends Model
      */
     public function getCost()
     {
-        return $this->cost;
+        return (array)$this->cost;
     }
 
     /**
@@ -55,7 +55,7 @@ class Attack extends Model
      */
     public function getName()
     {
-        return $this->name;
+        return (string)$this->name;
     }
 
     /**
@@ -71,7 +71,7 @@ class Attack extends Model
      */
     public function getText()
     {
-        return $this->text;
+        return (string)$this->text;
     }
 
     /**
@@ -87,7 +87,7 @@ class Attack extends Model
      */
     public function getDamage()
     {
-        return $this->damage;
+        return (string)$this->damage;
     }
 
     /**
@@ -103,7 +103,7 @@ class Attack extends Model
      */
     public function getConvertedEnergyCost()
     {
-        return $this->convertedEnergyCost;
+        return (int)$this->convertedEnergyCost;
     }
 
     /**

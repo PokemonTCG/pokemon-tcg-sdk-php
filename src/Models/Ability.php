@@ -25,7 +25,7 @@ class Ability extends Model
      */
     public function getName()
     {
-        return $this->name;
+        return (string)$this->name;
     }
 
     /**
@@ -41,7 +41,7 @@ class Ability extends Model
      */
     public function getText()
     {
-        return $this->text;
+        return (string)$this->text;
     }
 
     /**

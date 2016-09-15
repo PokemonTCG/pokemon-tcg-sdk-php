@@ -25,7 +25,7 @@ class Weakness extends Model
      */
     public function getType()
     {
-        return $this->type;
+        return (string)$this->type;
     }
 
     /**
@@ -41,7 +41,7 @@ class Weakness extends Model
      */
     public function getValue()
     {
-        return $this->value;
+        return (string)$this->value;
     }
 
     /**

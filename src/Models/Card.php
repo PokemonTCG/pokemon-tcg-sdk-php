@@ -56,7 +56,7 @@ class Card extends Model
     private $retreatCost;
 
     /**
-     * @var string
+     * @var array
      */
     private $text;
 
@@ -120,7 +120,7 @@ class Card extends Model
      */
     public function getId()
     {
-        return $this->id;
+        return (string)$this->id;
     }
 
     /**
@@ -136,7 +136,7 @@ class Card extends Model
      */
     public function getName()
     {
-        return $this->name;
+        return (string)$this->name;
     }
 
     /**
@@ -152,7 +152,7 @@ class Card extends Model
      */
     public function getNationalPokedexNumber()
     {
-        return $this->nationalPokedexNumber;
+        return (int)$this->nationalPokedexNumber;
     }
 
     /**
@@ -168,7 +168,7 @@ class Card extends Model
      */
     public function getImageUrl()
     {
-        return $this->imageUrl;
+        return (string)$this->imageUrl;
     }
 
     /**
@@ -184,7 +184,7 @@ class Card extends Model
      */
     public function getSubtype()
     {
-        return $this->subtype;
+        return (string)$this->subtype;
     }
 
     /**
@@ -200,7 +200,7 @@ class Card extends Model
      */
     public function getSupertype()
     {
-        return $this->supertype;
+        return (string)$this->supertype;
     }
 
     /**
@@ -232,7 +232,7 @@ class Card extends Model
      */
     public function getHp()
     {
-        return $this->hp;
+        return (string)$this->hp;
     }
 
     /**
@@ -248,7 +248,7 @@ class Card extends Model
      */
     public function getRetreatCost()
     {
-        return $this->retreatCost;
+        return (array)$this->retreatCost;
     }
 
     /**
@@ -260,15 +260,15 @@ class Card extends Model
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getText()
     {
-        return $this->text;
+        return (array)$this->text;
     }
 
     /**
-     * @param string $text
+     * @param array $text
      */
     public function setText($text)
     {
@@ -280,7 +280,7 @@ class Card extends Model
      */
     public function getNumber()
     {
-        return $this->number;
+        return (string)$this->number;
     }
 
     /**
@@ -296,7 +296,7 @@ class Card extends Model
      */
     public function getArtist()
     {
-        return $this->artist;
+        return (string)$this->artist;
     }
 
     /**
@@ -312,7 +312,7 @@ class Card extends Model
      */
     public function getRarity()
     {
-        return $this->rarity;
+        return (string)$this->rarity;
     }
 
     /**
@@ -328,7 +328,7 @@ class Card extends Model
      */
     public function getSeries()
     {
-        return $this->series;
+        return (string)$this->series;
     }
 
     /**
@@ -344,7 +344,7 @@ class Card extends Model
      */
     public function getSet()
     {
-        return $this->set;
+        return (string)$this->set;
     }
 
     /**
@@ -360,7 +360,7 @@ class Card extends Model
      */
     public function getSetCode()
     {
-        return $this->setCode;
+        return (string)$this->setCode;
     }
 
     /**
@@ -376,7 +376,7 @@ class Card extends Model
      */
     public function getTypes()
     {
-        return $this->types;
+        return (array)$this->types;
     }
 
     /**
@@ -392,7 +392,7 @@ class Card extends Model
      */
     public function getAttacks()
     {
-        return $this->attacks;
+        return (array)$this->attacks;
     }
 
     /**
@@ -408,7 +408,7 @@ class Card extends Model
      */
     public function getWeaknesses()
     {
-        return $this->weaknesses;
+        return (array)$this->weaknesses;
     }
 
     /**
@@ -424,7 +424,7 @@ class Card extends Model
      */
     public function getResistances()
     {
-        return $this->resistances;
+        return (array)$this->resistances;
     }
 
     /**
