@@ -3,7 +3,9 @@
 namespace Pokemon\Resources;
 
 use Doctrine\Common\Inflector\Inflector;
+use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Psr7\Request;
+use InvalidArgumentException;
 use Pokemon\Models\Model;
 use Pokemon\Resources\Interfaces\QueriableResourceInterface;
 use stdClass;
@@ -76,7 +78,7 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      * @param stdClass    $data
      * @param string|null $className
      *
-     * @return null|Model
+     * @return Model|null
      */
     protected function transform(stdClass $data, $className = null)
     {
@@ -97,12 +99,16 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      * @param string $identifier
      *
      * @return Model|null
+     * @throws InvalidArgumentException
      */
     public function find($identifier)
     {
         $this->identifier = $identifier;
-        $data = $this->getResponseData($this->client->send($this->prepare()));
-
+        try {
+            $data = $this->getResponseData($this->client->send($this->prepare()));
+        } catch (ClientException $e) {
+            throw new InvalidArgumentException('Card not found with identifier: ' . $identifier);
+        }
         return $this->transform($data);
     }
 
