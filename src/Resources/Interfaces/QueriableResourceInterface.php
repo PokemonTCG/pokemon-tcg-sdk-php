@@ -11,13 +11,13 @@ use Pokemon\Models\Model;
  */
 interface QueriableResourceInterface extends ResourceInterface
 {
+
     /**
-     * @param string $parameter
-     * @param string $value
+     * @param array $query
      *
      * @return QueriableResourceInterface
      */
-    public function where($parameter, $value);
+    public function where(array $query);
 
     /**
      * @param string $identifier
@@ -25,5 +25,5 @@ interface QueriableResourceInterface extends ResourceInterface
      * @return Model|null
      */
     public function find($identifier);
-    
+
 }

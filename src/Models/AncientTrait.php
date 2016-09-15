@@ -9,6 +9,7 @@ namespace Pokemon\Models;
  */
 class AncientTrait extends Model
 {
+
     /**
      * @var string
      */

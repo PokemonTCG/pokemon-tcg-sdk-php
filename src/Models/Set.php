@@ -9,6 +9,7 @@ namespace Pokemon\Models;
  */
 class Set extends Model
 {
+
     /**
      * @var string
      */

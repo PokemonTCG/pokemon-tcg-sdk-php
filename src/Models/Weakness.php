@@ -9,6 +9,7 @@ namespace Pokemon\Models;
  */
 class Weakness extends Model
 {
+
     /**
      * @var string
      */

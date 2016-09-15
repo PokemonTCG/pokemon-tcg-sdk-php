@@ -16,6 +16,7 @@ use stdClass;
  */
 class JsonResource implements ResourceInterface
 {
+
     /**
      * @var Client
      */
@@ -35,13 +36,13 @@ class JsonResource implements ResourceInterface
      * Request constructor.
      *
      * @param string $uri
-     * @param array $options
+     * @param array  $options
      */
     public function __construct($uri, array $options = [])
     {
         $defaults = [
             'base_uri' => Pokemon::API_URL,
-            'verify' => false,
+            'verify'   => false,
         ];
         $this->uri = $uri;
         $this->client = new Client(array_merge($defaults, $options));
@@ -83,6 +84,7 @@ class JsonResource implements ResourceInterface
     protected function getFirstPropertyName(stdClass $data)
     {
         $attributes = get_object_vars($data);
+
         return (count($attributes) > 0) ? array_keys($attributes)[0] : null;
     }
 
@@ -102,6 +104,7 @@ class JsonResource implements ResourceInterface
     public function all()
     {
         $data = $this->getResponseData($this->client->send($this->prepare()));
+
         return $this->transformAll($data);
     }
 }

@@ -14,6 +14,7 @@ use stdClass;
  */
 class Model
 {
+
     /**
      * @var array
      */
@@ -36,6 +37,7 @@ class Model
     {
         $reflect = new ReflectionClass($this);
         $properties = $reflect->getProperties(ReflectionProperty::IS_PRIVATE);
+
         return array_map(function (ReflectionProperty $property) {
             return $property->getName();
         }, $properties);
@@ -65,7 +67,7 @@ class Model
 
     /**
      * @param string $attribute
-     * @param mixed $value
+     * @param mixed  $value
      *
      * @return mixed|Model
      */

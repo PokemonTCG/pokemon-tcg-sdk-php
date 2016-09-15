@@ -30,7 +30,7 @@ class Attack extends Model
     private $damage;
 
     /**
-     * @var string
+     * @var int
      */
     private $convertedEnergyCost;
 
@@ -99,7 +99,7 @@ class Attack extends Model
     }
 
     /**
-     * @return string
+     * @return int
      */
     public function getConvertedEnergyCost()
     {
@@ -107,7 +107,7 @@ class Attack extends Model
     }
 
     /**
-     * @param string $convertedEnergyCost
+     * @param int $convertedEnergyCost
      */
     public function setConvertedEnergyCost($convertedEnergyCost)
     {

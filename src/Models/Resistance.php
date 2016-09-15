@@ -9,6 +9,7 @@ namespace Pokemon\Models;
  */
 class Resistance extends Model
 {
+
     /**
      * @var string
      */

@@ -15,6 +15,7 @@ use stdClass;
  */
 class QueriableResource extends JsonResource implements QueriableResourceInterface
 {
+
     /**
      * @var array
      */
@@ -41,18 +42,19 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
             $uri = $this->uri . '?' . http_build_query($this->query);
             $this->query = [];
         }
+
         return new Request($this->method, $uri);
     }
 
     /**
-     * @param string $parameter
-     * @param string $value
+     * @param array $query
      *
      * @return QueriableResourceInterface
      */
-    public function where($parameter, $value)
+    public function where(array $query)
     {
-        $this->query = array_merge($this->query, [$parameter => $value]);
+        $this->query = array_merge($this->query, $query);
+
         return $this;
     }
 
@@ -64,18 +66,21 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
     protected function transformAll(stdClass $data)
     {
         $name = $this->getFirstPropertyName($data);
+
         return array_map(function ($data) use ($name) {
             return $this->transform($data, $name);
         }, $this->getFirstProperty($data));
     }
 
     /**
-     * @param stdClass $data
+     * @param stdClass    $data
+     * @param string|null $className
      *
-     * @return Model|null
+     * @return null|Model
      */
     protected function transform(stdClass $data, $className = null)
     {
+        $model = null;
         $name = !empty($className) ? $className : $this->getFirstPropertyName($data);
         $data = !empty($className) ? $data : $this->getFirstProperty($data);
         $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($name));
@@ -83,10 +88,9 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
             /** @var Model $model */
             $model = new $class;
             $model->fill($data);
-            return $model;
         }
 
-        return null;
+        return $model;
     }
 
     /**
@@ -98,6 +102,7 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
     {
         $this->identifier = $identifier;
         $data = $this->getResponseData($this->client->send($this->prepare()));
+
         return $this->transform($data);
     }
 

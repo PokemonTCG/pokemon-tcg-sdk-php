@@ -14,6 +14,7 @@ use Pokemon\Resources\QueriableResource;
  */
 class Pokemon
 {
+
     const API_URL = 'https://api.pokemontcg.io/v1/';
 
     /**
@@ -53,7 +54,7 @@ class Pokemon
      */
     public static function Supertype(array $options = [])
     {
-        return new SupertypeResource('supertypes', $options);
+        return new JsonResource('supertypes', $options);
     }
 
     /**
@@ -63,6 +64,6 @@ class Pokemon
      */
     public static function Subtype(array $options = [])
     {
-        return new SubtypeResource('subtypes', $options);
+        return new JsonResource('subtypes', $options);
     }
 }

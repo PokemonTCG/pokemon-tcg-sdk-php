@@ -9,6 +9,7 @@ namespace Pokemon\Models;
  */
 class Ability extends Model
 {
+
     /**
      * @var string
      */

@@ -9,6 +9,7 @@ namespace Pokemon\Resources\Interfaces;
  */
 interface ResourceInterface
 {
+
     /**
      * @return array
      */
