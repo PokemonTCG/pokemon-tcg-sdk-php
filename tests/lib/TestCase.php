@@ -6,7 +6,7 @@ use GuzzleHttp\HandlerStack;
 /**
  * Class TestCase
  */
-class TestCase extends PHPUnit_Framework_TestCase
+abstract class TestCase extends PHPUnit_Framework_TestCase
 {
     /**
      * @var array
@@ -26,6 +26,22 @@ class TestCase extends PHPUnit_Framework_TestCase
         parent::setUp();
         $this->clientOptions = array_merge($this->clientOptions, ['verify' => getenv('CLIENT_OPTION_VERIFY')]);
     }
+
+	/**
+	 * @return string
+	 */
+    abstract protected function fixtureDirectory();
+
+	/**
+	 * @param $file
+	 *
+	 * @return string
+	 */
+	protected function getFixture($file)
+	{
+		$path = __DIR__ . '/fixtures/' . $this->fixtureDirectory() . '/';
+		return file_get_contents($path . $file);
+	}
 
     /**
      * Call this in setUp() to mock api responses in test cases.

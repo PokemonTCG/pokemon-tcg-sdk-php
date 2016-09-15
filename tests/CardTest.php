@@ -12,7 +12,16 @@ use Pokemon\Pokemon;
  */
 class CardTest extends TestCase
 {
-    /**
+
+	/**
+	 * @return string
+	 */
+	protected function fixtureDirectory()
+	{
+		return 'cards';
+	}
+
+	/**
      * Run before tests
      */
     protected function setUp()
@@ -21,9 +30,9 @@ class CardTest extends TestCase
 
         $this->setUpClientResponses([
             new Response(404),
-            new Response(200, [], file_get_contents(__DIR__ . '/lib/fixtures/cards_find.json')),
-            new Response(200, [], file_get_contents(__DIR__ . '/lib/fixtures/cards_page.json')),
-            new Response(200, [], file_get_contents(__DIR__ . '/lib/fixtures/cards_all.json')),
+            new Response(200, [], $this->getFixture('find.json')),
+            new Response(200, [], $this->getFixture('page.json')),
+            new Response(200, [], $this->getFixture('all.json')),
         ]);
     }
 
