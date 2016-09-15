@@ -76,8 +76,8 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      */
     protected function transform(stdClass $data, $className = null)
     {
-        $data = !empty($className) ? $data : $this->getFirstProperty($data);
         $name = !empty($className) ? $className : $this->getFirstPropertyName($data);
+        $data = !empty($className) ? $data : $this->getFirstProperty($data);
         $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($name));
         if (class_exists($class)) {
             /** @var Model $model */
