@@ -1,0 +1,10 @@
+{
+    "set": {
+        "code": "g1",
+        "name": "Generations",
+        "series": "XY",
+        "totalCards": 115,
+        "standardLegal": true,
+        "releaseDate": "02/22/2016"
+    }
+}

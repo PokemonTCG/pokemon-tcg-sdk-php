@@ -1,0 +1,84 @@
+{
+    "sets": [
+        {
+            "code": "bwp",
+            "name": "BW Black Star Promos",
+            "series": "BW",
+            "totalCards": 101,
+            "standardLegal": true,
+            "releaseDate": "03/01/2011"
+        },
+        {
+            "code": "xy5",
+            "name": "Primal Clash",
+            "series": "XY",
+            "totalCards": 160,
+            "standardLegal": true,
+            "releaseDate": "02/04/2015"
+        },
+        {
+            "code": "dc1",
+            "name": "Double Crisis",
+            "series": "XY",
+            "totalCards": 34,
+            "standardLegal": true,
+            "releaseDate": "03/25/2015"
+        },
+        {
+            "code": "xy6",
+            "name": "Roaring Skies",
+            "series": "XY",
+            "totalCards": 108,
+            "standardLegal": true,
+            "releaseDate": "05/06/2015"
+        },
+        {
+            "code": "xy7",
+            "name": "Ancient Origins",
+            "series": "XY",
+            "totalCards": 98,
+            "standardLegal": true,
+            "releaseDate": "08/12/2015"
+        },
+        {
+            "code": "xy8",
+            "name": "BREAKthrough",
+            "series": "XY",
+            "totalCards": 162,
+            "standardLegal": true,
+            "releaseDate": "11/04/2015"
+        },
+        {
+            "code": "xy9",
+            "name": "BREAKpoint",
+            "series": "XY",
+            "totalCards": 123,
+            "standardLegal": true,
+            "releaseDate": "02/03/2016"
+        },
+        {
+            "code": "g1",
+            "name": "Generations",
+            "series": "XY",
+            "totalCards": 115,
+            "standardLegal": true,
+            "releaseDate": "02/22/2016"
+        },
+        {
+            "code": "xy10",
+            "name": "Fates Collide",
+            "series": "XY",
+            "totalCards": 124,
+            "standardLegal": true,
+            "releaseDate": "05/02/2016"
+        },
+        {
+            "code": "xy11",
+            "name": "Steam Siege",
+            "series": "XY",
+            "totalCards": 114,
+            "standardLegal": true,
+            "releaseDate": "08/03/2016"
+        }
+    ]
+}

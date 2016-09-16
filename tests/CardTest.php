@@ -13,15 +13,15 @@ use Pokemon\Pokemon;
 class CardTest extends TestCase
 {
 
-	/**
-	 * @return string
-	 */
-	protected function fixtureDirectory()
-	{
-		return 'cards';
-	}
+    /**
+     * @return string
+     */
+    protected function fixtureDirectory()
+    {
+        return 'cards';
+    }
 
-	/**
+    /**
      * Run before tests
      */
     protected function setUp()
@@ -32,14 +32,14 @@ class CardTest extends TestCase
             new Response(404),
             new Response(200, [], $this->getFixture('find.json')),
             new Response(200, [], $this->getFixture('page.json')),
-            new Response(200, [], $this->getFixture('all.json')),
+            new Response(200, [], $this->getFixture('filtered.json')),
         ]);
     }
 
     /**
-     * Test invalid card identifier
+     * Test invalid card id
      */
-    public function testFindCardInvalid()
+    public function testFindWithInvalidIdThrowsException()
     {
         $this->setExpectedException(InvalidArgumentException::class);
         Pokemon::Card($this->clientOptions)->find('invalid');
@@ -48,7 +48,7 @@ class CardTest extends TestCase
     /**
      * Test find card
      */
-    public function testFindCardSuccess()
+    public function testFindReturnsOneCard()
     {
         /** @var Card $card */
         $card = Pokemon::Card($this->clientOptions)->find('xy7-57');
@@ -109,7 +109,7 @@ class CardTest extends TestCase
     /**
      * Test find all cards with query
      */
-    public function testAllCardsWhere()
+    public function testWhereFiltersOnCards()
     {
         $cards = Pokemon::Card($this->clientOptions)->where(['supertype' => 'pokemon', 'subtype' => 'basic', 'set' => 'roaring skies'])->all();
 

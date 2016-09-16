@@ -1,0 +1,84 @@
+{
+    "sets": [
+        {
+            "code": "base1",
+            "name": "Base",
+            "series": "Base",
+            "totalCards": 102,
+            "standardLegal": false,
+            "releaseDate": "01/09/1999"
+        },
+        {
+            "code": "base2",
+            "name": "Jungle",
+            "series": "Base",
+            "totalCards": 64,
+            "standardLegal": false,
+            "releaseDate": "06/16/1999"
+        },
+        {
+            "code": "base3",
+            "name": "Fossil",
+            "series": "Base",
+            "totalCards": 62,
+            "standardLegal": false,
+            "releaseDate": "10/10/1999"
+        },
+        {
+            "code": "base5",
+            "name": "Team Rocket",
+            "series": "Base",
+            "totalCards": 83,
+            "standardLegal": false,
+            "releaseDate": "04/24/2000"
+        },
+        {
+            "code": "gym1",
+            "name": "Gym Heroes",
+            "series": "Gym",
+            "totalCards": 132,
+            "standardLegal": false,
+            "releaseDate": "08/14/2000"
+        },
+        {
+            "code": "gym2",
+            "name": "Gym Challenge",
+            "series": "Gym",
+            "totalCards": 132,
+            "standardLegal": false,
+            "releaseDate": "10/16/2000"
+        },
+        {
+            "code": "neo1",
+            "name": "Neo Genesis",
+            "series": "Neo",
+            "totalCards": 111,
+            "standardLegal": false,
+            "releaseDate": "12/16/2000"
+        },
+        {
+            "code": "neo2",
+            "name": "Neo Discovery",
+            "series": "Neo",
+            "totalCards": 75,
+            "standardLegal": false,
+            "releaseDate": "06/01/2001"
+        },
+        {
+            "code": "neo3",
+            "name": "Neo Revelation",
+            "series": "Neo",
+            "totalCards": 66,
+            "standardLegal": false,
+            "releaseDate": "09/21/2001"
+        },
+        {
+            "code": "neo4",
+            "name": "Neo Destiny",
+            "series": "Neo",
+            "totalCards": 113,
+            "standardLegal": false,
+            "releaseDate": "02/28/2002"
+        }
+    ]
+}
