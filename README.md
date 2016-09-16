@@ -64,7 +64,7 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 #### Card
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | id | string |
 | name | string |
 | nationalPokedexNumber | int |
@@ -90,7 +90,7 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 #### Set
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | code | string |
 | name | string |
 | series | string |
@@ -101,21 +101,21 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 #### Ability
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | name | string |
 | text | string |
 
 #### AncientTrait
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | name | string |
 | text | string |
 
 #### Attack
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | cost | array |
 | name | string |
 | text | string |
@@ -125,13 +125,13 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 #### Resistance
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | type | string |
 | value | string |
 
 #### Weakness
 
 | Parameter | Type |
------------- -------
+| --------- | ---- |
 | type | string |
 | value | string |
