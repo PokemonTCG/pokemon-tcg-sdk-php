@@ -1,0 +1,21 @@
+{
+    "subtypes": [
+        "MEGA",
+        "Item",
+        "Level Up",
+        "Supporter",
+        "",
+        "EX",
+        "Technical Machine",
+        "Rocket's Secret Machine",
+        "Stadium",
+        "Restored",
+        "Stage 1",
+        "LEGEND",
+        "BREAK",
+        "Pokémon Tool",
+        "Stage 2",
+        "Special",
+        "Basic"
+    ]
+}

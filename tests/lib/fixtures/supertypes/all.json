@@ -1,0 +1,7 @@
+{
+    "supertypes": [
+        "Pokémon",
+        "Energy",
+        "Trainer"
+    ]
+}
