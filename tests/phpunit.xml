@@ -1,5 +1,0 @@
-<phpunit bootstrap="lib/bootstrap.php" colors="true">
-    <php>
-        <env name="CLIENT_OPTION_VERIFY" value="false"/>
-    </php>
-</phpunit>
