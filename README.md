@@ -7,7 +7,7 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 
 ## Installation
     
-    composer require mmonkey/pokemon-tcg-sdk-php
+    composer require pokemon-tcg/pokemon-tcg-sdk-php
     
 ## Usage
 
