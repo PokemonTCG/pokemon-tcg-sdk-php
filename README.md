@@ -104,6 +104,7 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 | --------- | ---- |
 | name | string |
 | text | string |
+| type | string |
 
 #### AncientTrait
 

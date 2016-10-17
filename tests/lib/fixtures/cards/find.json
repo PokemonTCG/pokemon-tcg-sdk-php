@@ -8,7 +8,8 @@
         "supertype": "Pokémon",
         "ability": {
             "name": "Renegade Pulse",
-            "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Mega Evolution Pokémon."
+            "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Mega Evolution Pokémon.",
+            "type": "Ability"
         },
         "hp": "170",
         "retreatCost": [
