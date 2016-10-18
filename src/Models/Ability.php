@@ -21,6 +21,11 @@ class Ability extends Model
     private $text;
 
     /**
+     * @var string
+     */
+    private $type;
+
+    /**
      * @return string
      */
     public function getName()
@@ -50,6 +55,22 @@ class Ability extends Model
     public function setText($text)
     {
         $this->text = $text;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return (string)$this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
     }
 
 }

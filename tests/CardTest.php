@@ -74,6 +74,7 @@ class CardTest extends TestCase
         $this->assertInstanceOf(Ability::class, $card->getAbility());
         $this->assertEquals('Renegade Pulse', $card->getAbility()->getName());
         $this->assertEquals('Prevent all effects of attacks, including damage, done to this Pokémon by your opponent\'s Mega Evolution Pokémon.', $card->getAbility()->getText());
+        $this->assertEquals('Ability', $card->getAbility()->getType());
 
         /** @var Attack $attack */
         $attack = $card->getAttacks()[0];
