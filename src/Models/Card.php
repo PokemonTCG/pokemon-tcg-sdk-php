@@ -33,6 +33,11 @@ class Card extends Model
     /**
      * @var string
      */
+    private $imageUrlHiRes;
+
+    /**
+     * @var string
+     */
     private $subtype;
 
     /**
@@ -177,6 +182,22 @@ class Card extends Model
     public function setImageUrl($imageUrl)
     {
         $this->imageUrl = $imageUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImageUrlHiRes()
+    {
+        return (string)$this->imageUrlHiRes;
+    }
+
+    /**
+     * @param string $imageUrlHiRes
+     */
+    public function setImageUrlHiRes($imageUrlHiRes)
+    {
+        $this->imageUrlHiRes = $imageUrlHiRes;
     }
 
     /**

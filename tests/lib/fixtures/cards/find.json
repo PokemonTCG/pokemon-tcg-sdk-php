@@ -3,7 +3,8 @@
         "id": "xy7-57",
         "name": "Giratina-EX",
         "nationalPokedexNumber": 487,
-        "imageUrl": "https://s3.amazonaws.com/pokemontcg/xy7/57.png",
+        "imageUrl": "https://images.pokemontcg.io/xy7/54.png",
+        "imageUrlHiRes": "https://images.pokemontcg.io/xy7/54_hires.png",
         "subtype": "EX",
         "supertype": "Pokémon",
         "ability": {

@@ -1,10 +1,12 @@
 {
     "set": {
         "code": "g1",
+        "ptcgoCode": "GEN",
         "name": "Generations",
         "series": "XY",
         "totalCards": 115,
         "standardLegal": true,
-        "releaseDate": "02/22/2016"
+        "releaseDate": "02/22/2016",
+        "symbolUrl": "https://images.pokemontcg.io/g1/symbol.png"
     }
 }

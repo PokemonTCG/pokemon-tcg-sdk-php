@@ -2,83 +2,103 @@
     "sets": [
         {
             "code": "bwp",
+            "ptcgoCode": "PR",
             "name": "BW Black Star Promos",
-            "series": "BW",
+            "series": "Black & White",
             "totalCards": 101,
             "standardLegal": true,
-            "releaseDate": "03/01/2011"
+            "releaseDate": "03/01/2011",
+            "symbolUrl": "https://images.pokemontcg.io/bwp/symbol.png"
         },
         {
             "code": "xy5",
+            "ptcgoCode": "PRC",
             "name": "Primal Clash",
             "series": "XY",
             "totalCards": 160,
             "standardLegal": true,
-            "releaseDate": "02/04/2015"
+            "releaseDate": "02/04/2015",
+            "symbolUrl": "https://images.pokemontcg.io/xy5/symbol.png"
         },
         {
             "code": "dc1",
+            "ptcgoCode": "DCR",
             "name": "Double Crisis",
             "series": "XY",
             "totalCards": 34,
             "standardLegal": true,
-            "releaseDate": "03/25/2015"
+            "releaseDate": "03/25/2015",
+            "symbolUrl": "https://images.pokemontcg.io/dc1/symbol.png"
         },
         {
             "code": "xy6",
+            "ptcgoCode": "ROS",
             "name": "Roaring Skies",
             "series": "XY",
             "totalCards": 108,
             "standardLegal": true,
-            "releaseDate": "05/06/2015"
+            "releaseDate": "05/06/2015",
+            "symbolUrl": "https://images.pokemontcg.io/xy6/symbol.png"
         },
         {
             "code": "xy7",
+            "ptcgoCode": "AOR",
             "name": "Ancient Origins",
             "series": "XY",
             "totalCards": 98,
             "standardLegal": true,
-            "releaseDate": "08/12/2015"
+            "releaseDate": "08/12/2015",
+            "symbolUrl": "https://images.pokemontcg.io/xy7/symbol.png"
         },
         {
             "code": "xy8",
+            "ptcgoCode": "BKT",
             "name": "BREAKthrough",
             "series": "XY",
             "totalCards": 162,
             "standardLegal": true,
-            "releaseDate": "11/04/2015"
+            "releaseDate": "11/04/2015",
+            "symbolUrl": "https://images.pokemontcg.io/xy8/symbol.png"
         },
         {
             "code": "xy9",
+            "ptcgoCode": "BKP",
             "name": "BREAKpoint",
             "series": "XY",
             "totalCards": 123,
             "standardLegal": true,
-            "releaseDate": "02/03/2016"
+            "releaseDate": "02/03/2016",
+            "symbolUrl": "https://images.pokemontcg.io/xy9/symbol.png"
         },
         {
             "code": "g1",
+            "ptcgoCode": "GEN",
             "name": "Generations",
             "series": "XY",
             "totalCards": 115,
             "standardLegal": true,
-            "releaseDate": "02/22/2016"
+            "releaseDate": "02/22/2016",
+            "symbolUrl": "https://images.pokemontcg.io/g1/symbol.png"
         },
         {
             "code": "xy10",
+            "ptcgoCode": "FCO",
             "name": "Fates Collide",
             "series": "XY",
             "totalCards": 124,
             "standardLegal": true,
-            "releaseDate": "05/02/2016"
+            "releaseDate": "05/02/2016",
+            "symbolUrl": "https://images.pokemontcg.io/xy10/symbol.png"
         },
         {
             "code": "xy11",
+            "ptcgoCode": "STS",
             "name": "Steam Siege",
             "series": "XY",
             "totalCards": 114,
             "standardLegal": true,
-            "releaseDate": "08/03/2016"
+            "releaseDate": "08/03/2016",
+            "symbolUrl": "https://images.pokemontcg.io/xy11/symbol.png"
         }
     ]
 }

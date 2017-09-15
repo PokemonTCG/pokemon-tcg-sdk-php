@@ -57,7 +57,8 @@ class CardTest extends TestCase
         $this->assertEquals('xy7-57', $card->getId());
         $this->assertEquals('Giratina-EX', $card->getName());
         $this->assertEquals(487, $card->getNationalPokedexNumber());
-        $this->assertEquals('https://s3.amazonaws.com/pokemontcg/xy7/57.png', $card->getImageUrl());
+        $this->assertEquals('https://images.pokemontcg.io/xy7/54.png', $card->getImageUrl());
+        $this->assertEquals('https://images.pokemontcg.io/xy7/54_hires.png', $card->getImageUrlHiRes());
         $this->assertEquals('EX', $card->getSubtype());
         $this->assertEquals('Pokémon', $card->getSupertype());
         $this->assertEquals('170', $card->getHp());

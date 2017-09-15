@@ -52,11 +52,13 @@ class SetTest extends TestCase
 
         $this->assertInstanceOf(Set::class, $set);
         $this->assertEquals('g1', $set->getCode());
+        $this->assertEquals('GEN', $set->getPtcgoCode());
         $this->assertEquals('Generations', $set->getName());
         $this->assertEquals('XY', $set->getSeries());
         $this->assertEquals(115, $set->getTotalCards());
         $this->assertEquals(true, $set->isStandardLegal());
         $this->assertEquals('02/22/2016', $set->getReleaseDate());
+        $this->assertEquals('https://images.pokemontcg.io/g1/symbol.png', $set->getSymbolUrl());
     }
 
     /**

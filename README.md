@@ -69,6 +69,7 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 | name | string |
 | nationalPokedexNumber | int |
 | imageUrl | string |
+| imageUrlHiRes | string |
 | subtype | string |
 | supertype | string |
 | ability | Ability |
@@ -92,11 +93,13 @@ This is the Pok√©mon TCG SDK PHP implementation. It is a wrapper around the Pok√
 | Parameter | Type |
 | --------- | ---- |
 | code | string |
+| ptcgoCode | string |
 | name | string |
 | series | string |
 | totalCards | int |
 | standardLegal | boolean |
 | releaseDate | string |
+| symbolUrl | string |
 
 #### Ability
 

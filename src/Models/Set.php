@@ -18,6 +18,11 @@ class Set extends Model
     /**
      * @var string
      */
+    private $ptcgoCode;
+
+    /**
+     * @var string
+     */
     private $name;
 
     /**
@@ -41,6 +46,11 @@ class Set extends Model
     private $releaseDate;
 
     /**
+     * @var string
+     */
+    private $symbolUrl;
+
+    /**
      * @return string
      */
     public function getCode()
@@ -54,6 +64,22 @@ class Set extends Model
     public function setCode($code)
     {
         $this->code = $code;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPtcgoCode()
+    {
+        return (string)$this->ptcgoCode;
+    }
+
+    /**
+     * @param string $ptcgoCode
+     */
+    public function setPtcgoCode($ptcgoCode)
+    {
+        $this->ptcgoCode = $ptcgoCode;
     }
 
     /**
@@ -134,6 +160,22 @@ class Set extends Model
     public function setReleaseDate($releaseDate)
     {
         $this->releaseDate = $releaseDate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSymbolUrl()
+    {
+        return (string)$this->symbolUrl;
+    }
+
+    /**
+     * @param string $symbolUrl
+     */
+    public function setSymbolUrl($symbolUrl)
+    {
+        $this->symbolUrl = $symbolUrl;
     }
 
 }
