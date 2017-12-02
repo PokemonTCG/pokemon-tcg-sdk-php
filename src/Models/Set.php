@@ -41,6 +41,11 @@ class Set extends Model
     private $standardLegal;
 
     /**
+     * @var boolean
+     */
+    private $expandedLegal;
+
+    /**
      * @var string
      */
     private $releaseDate;
@@ -49,6 +54,11 @@ class Set extends Model
      * @var string
      */
     private $symbolUrl;
+
+    /**
+     * @var string
+     */
+    private $logoUrl;
 
     /**
      * @return string
@@ -147,6 +157,22 @@ class Set extends Model
     }
 
     /**
+     * @return boolean
+     */
+    public function isExpandedLegal()
+    {
+        return (boolean)$this->expandedLegal;
+    }
+
+    /**
+     * @param boolean $expandedLegal
+     */
+    public function setExpandedLegal($expandedLegal)
+    {
+        $this->expandedLegal = $expandedLegal;
+    }
+
+    /**
      * @return string
      */
     public function getReleaseDate()
@@ -176,6 +202,22 @@ class Set extends Model
     public function setSymbolUrl($symbolUrl)
     {
         $this->symbolUrl = $symbolUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLogoUrl()
+    {
+        return (string)$this->logoUrl;
+    }
+
+    /**
+     * @param string $logoUrl
+     */
+    public function setLogoUrl($logoUrl)
+    {
+        $this->logoUrl = $logoUrl;
     }
 
 }
