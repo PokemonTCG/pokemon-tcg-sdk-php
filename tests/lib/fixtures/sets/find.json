@@ -6,7 +6,9 @@
         "series": "XY",
         "totalCards": 115,
         "standardLegal": true,
+        "expandedLegal": true,
         "releaseDate": "02/22/2016",
-        "symbolUrl": "https://images.pokemontcg.io/g1/symbol.png"
+        "symbolUrl": "https://images.pokemontcg.io/g1/symbol.png",
+        "logoUrl": "https://images.pokemontcg.io/g1/logo.png"
     }
 }

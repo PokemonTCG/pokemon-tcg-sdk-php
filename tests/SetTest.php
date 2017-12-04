@@ -57,8 +57,10 @@ class SetTest extends TestCase
         $this->assertEquals('XY', $set->getSeries());
         $this->assertEquals(115, $set->getTotalCards());
         $this->assertEquals(true, $set->isStandardLegal());
+        $this->assertEquals(true, $set->isExpandedLegal());
         $this->assertEquals('02/22/2016', $set->getReleaseDate());
         $this->assertEquals('https://images.pokemontcg.io/g1/symbol.png', $set->getSymbolUrl());
+        $this->assertEquals('https://images.pokemontcg.io/g1/logo.png', $set->getLogoUrl());
     }
 
     /**
