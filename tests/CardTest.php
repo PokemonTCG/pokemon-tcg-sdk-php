@@ -1,11 +1,12 @@
 <?php
 
-use GuzzleHttp\Psr7\Response;
-use Pokemon\Models\Ability;
-use Pokemon\Models\Attack;
-use Pokemon\Models\Card;
-use Pokemon\Models\Weakness;
 use Pokemon\Pokemon;
+use Tests\Lib\TestCase;
+use Pokemon\Models\Card;
+use Pokemon\Models\Attack;
+use Pokemon\Models\Ability;
+use Pokemon\Models\Weakness;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Class CardTest
@@ -24,7 +25,7 @@ class CardTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -41,7 +42,7 @@ class CardTest extends TestCase
      */
     public function testFindWithInvalidIdThrowsException()
     {
-        $this->setExpectedException(InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
         Pokemon::Card($this->clientOptions)->find('invalid');
     }
 

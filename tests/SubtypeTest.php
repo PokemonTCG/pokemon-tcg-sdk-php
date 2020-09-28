@@ -1,14 +1,17 @@
 <?php
 
-use GuzzleHttp\Psr7\Response;
 use Pokemon\Pokemon;
+use Tests\Lib\TestCase;
+use GuzzleHttp\Psr7\Response;
+use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 
 /**
  * Class SubtypeTest
  */
 class SubtypeTest extends TestCase
 {
-
+    use ArraySubsetAsserts;
+    
     /**
      * @return string
      */
@@ -20,7 +23,7 @@ class SubtypeTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

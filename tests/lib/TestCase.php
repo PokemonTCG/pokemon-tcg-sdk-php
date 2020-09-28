@@ -1,12 +1,15 @@
 <?php
 
-use GuzzleHttp\Handler\MockHandler;
+namespace Tests\Lib;
+
 use GuzzleHttp\HandlerStack;
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
+use GuzzleHttp\Handler\MockHandler;
 
 /**
  * Class TestCase
  */
-abstract class TestCase extends PHPUnit_Framework_TestCase
+abstract class TestCase extends PHPUnitTestCase
 {
     /**
      * @var array
@@ -21,7 +24,7 @@ abstract class TestCase extends PHPUnit_Framework_TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->clientOptions = array_merge($this->clientOptions, ['verify' => getenv('CLIENT_OPTION_VERIFY')]);

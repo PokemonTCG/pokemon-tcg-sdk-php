@@ -1,8 +1,9 @@
 <?php
 
-use GuzzleHttp\Psr7\Response;
-use Pokemon\Models\Set;
 use Pokemon\Pokemon;
+use Pokemon\Models\Set;
+use Tests\Lib\TestCase;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Class SetTest
@@ -21,7 +22,7 @@ class SetTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -38,7 +39,7 @@ class SetTest extends TestCase
      */
     public function testFindWithInvalidCodeThrowsException()
     {
-        $this->setExpectedException(InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
         Pokemon::Set($this->clientOptions)->find('invalid');
     }
 

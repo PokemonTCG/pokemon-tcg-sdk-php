@@ -1,7 +1,8 @@
 <?php
 
-use GuzzleHttp\Psr7\Response;
 use Pokemon\Pokemon;
+use Tests\Lib\TestCase;
+use GuzzleHttp\Psr7\Response;
 
 /**
  * Class SubtypeTest
@@ -20,7 +21,7 @@ class SupertypeTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
