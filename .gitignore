@@ -1,6 +1,5 @@
-# Composer
-vendor
-composer.lock
-
-# PhpStorm
-.idea
+/vendor/
+/composer.lock
+/composer.phar
+/.idea/
+/.phpunit.result.cache

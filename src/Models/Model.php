@@ -2,8 +2,10 @@
 
 namespace Pokemon\Models;
 
-use Doctrine\Common\Inflector\Inflector;
+use Doctrine\Inflector\Inflector;
+use Doctrine\Inflector\InflectorFactory;
 use ReflectionClass;
+use ReflectionException;
 use ReflectionProperty;
 use stdClass;
 
@@ -21,17 +23,24 @@ class Model
     protected $methods;
 
     /**
+     * @var Inflector
+     */
+    protected $inflector;
+
+    /**
      * Model constructor.
      */
     public function __construct()
     {
         $this->methods = array_flip(get_class_methods(get_class($this)));
+        $this->inflector = InflectorFactory::create()->build();
 
         return $this;
     }
 
     /**
      * @return array
+     * @throws ReflectionException
      */
     public function getAttributes()
     {
@@ -74,7 +83,7 @@ class Model
     protected function parse($attribute, $value)
     {
         if (is_object($value)) {
-            $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($attribute));
+            $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($attribute));
             if (class_exists($class)) {
                 /** @var Model $model */
                 $model = new $class;
@@ -88,6 +97,7 @@ class Model
 
     /**
      * @return array
+     * @throws ReflectionException
      */
     public function toArray()
     {
@@ -117,6 +127,7 @@ class Model
      * @param mixed $value
      *
      * @return mixed
+     * @throws ReflectionException
      */
     protected function valueToArray($value)
     {
@@ -129,6 +140,7 @@ class Model
 
     /**
      * @return string
+     * @throws ReflectionException
      */
     public function toJson()
     {

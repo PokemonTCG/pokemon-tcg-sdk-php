@@ -21,7 +21,7 @@ class SetTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -38,7 +38,7 @@ class SetTest extends TestCase
      */
     public function testFindWithInvalidCodeThrowsException()
     {
-        $this->setExpectedException(InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
         Pokemon::Set($this->clientOptions)->find('invalid');
     }
 

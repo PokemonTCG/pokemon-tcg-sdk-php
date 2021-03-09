@@ -2,8 +2,9 @@
 
 namespace Pokemon\Resources;
 
-use Doctrine\Common\Inflector\Inflector;
+use Doctrine\Inflector\InflectorFactory;
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
 use InvalidArgumentException;
 use Pokemon\Models\Model;
@@ -85,7 +86,9 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
         $model = null;
         $name = !empty($className) ? $className : $this->getFirstPropertyName($data);
         $data = !empty($className) ? $data : $this->getFirstProperty($data);
-        $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($name));
+
+        $infelctor = InflectorFactory::create()->build();
+        $class = '\\Pokemon\\Models\\' . ucfirst($infelctor->singularize($name));
         if (class_exists($class)) {
             /** @var Model $model */
             $model = new $class;
@@ -100,6 +103,7 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      *
      * @return Model|null
      * @throws InvalidArgumentException
+     * @throws GuzzleException
      */
     public function find($identifier)
     {
