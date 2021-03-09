@@ -2,7 +2,10 @@
 
 namespace Pokemon\Resources;
 
+use Doctrine\Inflector\Inflector;
+use Doctrine\Inflector\InflectorFactory;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
 use Pokemon\Pokemon;
 use Pokemon\Resources\Interfaces\ResourceInterface;
@@ -33,6 +36,11 @@ class JsonResource implements ResourceInterface
     protected $uri;
 
     /**
+     * @var Inflector
+     */
+    protected $inflector;
+
+    /**
      * Request constructor.
      *
      * @param string $uri
@@ -46,6 +54,7 @@ class JsonResource implements ResourceInterface
         ];
         $this->uri = $uri;
         $this->client = new Client(array_merge($defaults, $options));
+        $this->inflector = InflectorFactory::create()->build();
     }
 
     /**
@@ -100,6 +109,7 @@ class JsonResource implements ResourceInterface
 
     /**
      * @return array
+     * @throws GuzzleException
      */
     public function all()
     {
