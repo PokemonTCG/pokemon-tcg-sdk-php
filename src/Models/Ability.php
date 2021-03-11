@@ -28,15 +28,15 @@ class Ability extends Model
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
-        return (string)$this->name;
+        return $this->name;
     }
 
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -44,15 +44,15 @@ class Ability extends Model
     /**
      * @return string
      */
-    public function getText()
+    public function getText(): string
     {
-        return (string)$this->text;
+        return $this->text;
     }
 
     /**
      * @param string $text
      */
-    public function setText($text)
+    public function setText(string $text)
     {
         $this->text = $text;
     }
@@ -60,15 +60,15 @@ class Ability extends Model
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
-        return (string)$this->type;
+        return $this->type;
     }
 
     /**
      * @param string $type
      */
-    public function setType($type)
+    public function setType(string $type)
     {
         $this->type = $type;
     }

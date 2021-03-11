@@ -9,10 +9,6 @@ namespace Pokemon\Models;
  */
 class Attack extends Model
 {
-    /**
-     * @var array
-     */
-    private $cost;
 
     /**
      * @var string
@@ -20,14 +16,9 @@ class Attack extends Model
     private $name;
 
     /**
-     * @var string
+     * @var array
      */
-    private $text;
-
-    /**
-     * @var string
-     */
-    private $damage;
+    private $cost;
 
     /**
      * @var int
@@ -35,83 +26,93 @@ class Attack extends Model
     private $convertedEnergyCost;
 
     /**
-     * @return array
+     * @var string
      */
-    public function getCost()
-    {
-        return (array)$this->cost;
-    }
+    private $damage;
 
     /**
-     * @param array $cost
+     * @var string
      */
-    public function setCost($cost)
-    {
-        $this->cost = $cost;
-    }
+    private $text;
 
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
-        return (string)$this->name;
+        return $this->name;
     }
 
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
 
     /**
-     * @return string
+     * @return array
      */
-    public function getText()
+    public function getCost(): array
     {
-        return (string)$this->text;
+        return $this->cost;
     }
 
     /**
-     * @param string $text
+     * @param array $cost
      */
-    public function setText($text)
+    public function setCost(array $cost)
     {
-        $this->text = $text;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDamage()
-    {
-        return (string)$this->damage;
-    }
-
-    /**
-     * @param string $damage
-     */
-    public function setDamage($damage)
-    {
-        $this->damage = $damage;
+        $this->cost = $cost;
     }
 
     /**
      * @return int
      */
-    public function getConvertedEnergyCost()
+    public function getConvertedEnergyCost(): int
     {
-        return (int)$this->convertedEnergyCost;
+        return $this->convertedEnergyCost;
     }
 
     /**
      * @param int $convertedEnergyCost
      */
-    public function setConvertedEnergyCost($convertedEnergyCost)
+    public function setConvertedEnergyCost(int $convertedEnergyCost)
     {
         $this->convertedEnergyCost = $convertedEnergyCost;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDamage(): string
+    {
+        return $this->damage;
+    }
+
+    /**
+     * @param string $damage
+     */
+    public function setDamage(string $damage)
+    {
+        $this->damage = $damage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getText(): string
+    {
+        return $this->text;
+    }
+
+    /**
+     * @param string $text
+     */
+    public function setText(string $text)
+    {
+        $this->text = $text;
     }
 
 }

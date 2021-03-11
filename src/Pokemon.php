@@ -5,7 +5,7 @@ namespace Pokemon;
 use Pokemon\Resources\Interfaces\QueriableResourceInterface;
 use Pokemon\Resources\Interfaces\ResourceInterface;
 use Pokemon\Resources\JsonResource;
-use Pokemon\Resources\QueriableResource;
+use Pokemon\Resources\QueryableResource;
 
 /**
  * Class Pokemon
@@ -15,7 +15,7 @@ use Pokemon\Resources\QueriableResource;
 class Pokemon
 {
 
-    const API_URL = 'https://api.pokemontcg.io/v1/';
+    const API_URL = 'https://api.pokemontcg.io/v2/';
 
     /**
      * @var null|array
@@ -85,7 +85,7 @@ class Pokemon
     {
         if (!array_key_exists($type, self::$cache['resources']) || self::haveOptionsBeenUpdated($type, $options)) {
             self::$cache['options'][$type] = $options;
-            self::$cache['resources'][$type] = new QueriableResource($type, $options);
+            self::$cache['resources'][$type] = new QueryableResource($type, $options);
         }
         return self::$cache['resources'][$type];
     }

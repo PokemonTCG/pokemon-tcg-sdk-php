@@ -2,7 +2,6 @@
 
 namespace Pokemon\Models;
 
-use Doctrine\Inflector\Inflector;
 use Doctrine\Inflector\InflectorFactory;
 use ReflectionClass;
 use ReflectionException;
@@ -23,17 +22,11 @@ class Model
     protected $methods;
 
     /**
-     * @var Inflector
-     */
-    protected $inflector;
-
-    /**
      * Model constructor.
      */
     public function __construct()
     {
         $this->methods = array_flip(get_class_methods(get_class($this)));
-        $this->inflector = InflectorFactory::create()->build();
 
         return $this;
     }
@@ -82,8 +75,26 @@ class Model
      */
     protected function parse($attribute, $value)
     {
+        $inflector = InflectorFactory::create()->build();
+
         if (is_object($value)) {
-            $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($attribute));
+            switch ($attribute) {
+                case 'images':
+                    $class = get_class($this) . 'Images';
+                    break;
+
+                case 'tcgplayer':
+                    $class = '\\Pokemon\\Models\\TCGPlayer';
+                    break;
+
+                case 'legalities':
+                    $class = '\\Pokemon\\Models\\Legalities';
+                    break;
+
+                default:
+                    $class = '\\Pokemon\\Models\\' . ucfirst($inflector->singularize($attribute));
+            }
+
             if (class_exists($class)) {
                 /** @var Model $model */
                 $model = new $class;

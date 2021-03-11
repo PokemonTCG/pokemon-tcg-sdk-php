@@ -11,11 +11,11 @@ use Pokemon\Resources\Interfaces\QueriableResourceInterface;
 use stdClass;
 
 /**
- * Class QueriableResource
+ * Class QueryableResource
  *
  * @package Pokemon\Resources
  */
-class QueriableResource extends JsonResource implements QueriableResourceInterface
+class QueryableResource extends JsonResource implements QueriableResourceInterface
 {
 
     /**
@@ -33,15 +33,15 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      */
     protected function prepare()
     {
-        $uri = $this->uri;
+        $uri = $this->resource;
 
         if (!empty($this->identifier)) {
-            $uri = $this->uri . '/' . $this->identifier;
+            $uri = $this->resource . '/' . $this->identifier;
             $this->identifier = null;
         }
 
         if (!empty($this->query)) {
-            $uri = $this->uri . '?' . http_build_query($this->query);
+            $uri = $this->resource . '?' . http_build_query($this->query);
             $this->query = [];
         }
 
@@ -67,32 +67,9 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
      */
     protected function transformAll(stdClass $data)
     {
-        $name = $this->getFirstPropertyName($data);
-
-        return array_map(function ($data) use ($name) {
-            return $this->transform($data, $name);
+        return array_map(function ($data) {
+            return $this->transform($data);
         }, $this->getFirstProperty($data));
-    }
-
-    /**
-     * @param stdClass    $data
-     * @param string|null $className
-     *
-     * @return Model|null
-     */
-    protected function transform(stdClass $data, $className = null)
-    {
-        $model = null;
-        $name = !empty($className) ? $className : $this->getFirstPropertyName($data);
-        $data = !empty($className) ? $data : $this->getFirstProperty($data);
-        $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($name));
-        if (class_exists($class)) {
-            /** @var Model $model */
-            $model = new $class;
-            $model->fill($data);
-        }
-
-        return $model;
     }
 
     /**
@@ -106,11 +83,12 @@ class QueriableResource extends JsonResource implements QueriableResourceInterfa
     {
         $this->identifier = $identifier;
         try {
-            $data = $this->getResponseData($this->client->send($this->prepare()));
+            $response = $this->getResponseData($this->client->send($this->prepare()));
         } catch (ClientException $e) {
             throw new InvalidArgumentException('Card not found with identifier: ' . $identifier);
         }
-        return $this->transform($data);
+
+        return $this->transform($response->data);
     }
 
 }

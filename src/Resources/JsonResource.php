@@ -7,6 +7,7 @@ use Doctrine\Inflector\InflectorFactory;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
+use Pokemon\Models\Model;
 use Pokemon\Pokemon;
 use Pokemon\Resources\Interfaces\ResourceInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -33,7 +34,7 @@ class JsonResource implements ResourceInterface
     /**
      * @var string
      */
-    protected $uri;
+    protected $resource;
 
     /**
      * @var Inflector
@@ -43,16 +44,16 @@ class JsonResource implements ResourceInterface
     /**
      * Request constructor.
      *
-     * @param string $uri
+     * @param string $resource
      * @param array  $options
      */
-    public function __construct($uri, array $options = [])
+    public function __construct($resource, array $options = [])
     {
         $defaults = [
             'base_uri' => Pokemon::API_URL,
             'verify'   => false,
         ];
-        $this->uri = $uri;
+        $this->resource = $resource;
         $this->client = new Client(array_merge($defaults, $options));
         $this->inflector = InflectorFactory::create()->build();
     }
@@ -62,7 +63,7 @@ class JsonResource implements ResourceInterface
      */
     protected function prepare()
     {
-        return new Request($this->method, $this->uri);
+        return new Request($this->method, $this->resource);
     }
 
     /**
@@ -105,6 +106,25 @@ class JsonResource implements ResourceInterface
     protected function getFirstProperty(stdClass $data)
     {
         return $data->{$this->getFirstPropertyName($data)};
+    }
+
+    /**
+     * @param stdClass $data
+     *
+     * @return Model|null
+     */
+    protected function transform(stdClass $data)
+    {
+        $model = null;
+
+        $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($this->resource));
+        if (class_exists($class)) {
+            /** @var Model $model */
+            $model = new $class;
+            $model->fill($data);
+        }
+
+        return $model;
     }
 
     /**
