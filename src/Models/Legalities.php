@@ -36,7 +36,7 @@ class Legalities extends Model
     /**
      * @param string|null $standard
      */
-    public function setStandard(string $standard)
+    public function setStandard(?string $standard)
     {
         $this->standard = $standard;
     }
@@ -52,7 +52,7 @@ class Legalities extends Model
     /**
      * @param string|null $unlimited
      */
-    public function setUnlimited(string $unlimited)
+    public function setUnlimited(?string $unlimited)
     {
         $this->unlimited = $unlimited;
     }
@@ -68,7 +68,7 @@ class Legalities extends Model
     /**
      * @param string|null $expanded
      */
-    public function setExpanded(string $expanded)
+    public function setExpanded(?string $expanded)
     {
         $this->expanded = $expanded;
     }

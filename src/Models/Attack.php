@@ -26,12 +26,12 @@ class Attack extends Model
     private $convertedEnergyCost;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $damage;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $text;
 
@@ -84,33 +84,33 @@ class Attack extends Model
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getDamage(): string
+    public function getDamage(): ?string
     {
         return $this->damage;
     }
 
     /**
-     * @param string $damage
+     * @param string|null $damage
      */
-    public function setDamage(string $damage)
+    public function setDamage(?string $damage)
     {
         $this->damage = $damage;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
 
     /**
-     * @param string $text
+     * @param string|null $text
      */
-    public function setText(string $text)
+    public function setText(?string $text)
     {
         $this->text = $text;
     }

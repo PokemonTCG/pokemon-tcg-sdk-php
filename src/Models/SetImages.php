@@ -11,43 +11,43 @@ class SetImages extends Model
 {
 
     /**
-     * @var string
+     * @var string|null
      */
     private $symbol;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $logo;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSymbol(): string
+    public function getSymbol(): ?string
     {
         return $this->symbol;
     }
 
     /**
-     * @param string $symbol
+     * @param string|null $symbol
      */
-    public function setSymbol(string $symbol)
+    public function setSymbol(?string $symbol)
     {
         $this->symbol = $symbol;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLogo(): string
+    public function getLogo(): ?string
     {
         return $this->logo;
     }
 
     /**
-     * @param string $logo
+     * @param string|null $logo
      */
-    public function setLogo(string $logo)
+    public function setLogo(?string $logo)
     {
         $this->logo = $logo;
     }

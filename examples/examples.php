@@ -17,6 +17,7 @@ $options = ['verify' => false];
  * Get a single card
  */
 //$response = Pokemon::Card($options)->find('xy7-54');
+//$response = Pokemon::Card($options)->find('xyp-XY93');
 //print_r($response->toArray());
 //print_r($response->toJson());
 
@@ -71,13 +72,19 @@ $options = ['verify' => false];
 //print_r($response);
 
 /**
+ * Get all subtypes
+ */
+//$response = Pokemon::Subtype($options)->all();
+//print_r($response);
+
+/**
  * Get all supertypes
  */
 //$response = Pokemon::Supertype($options)->all();
 //print_r($response);
 
 /**
- * Get all subtypes
+ * Get all rarities
  */
-//$response = Pokemon::Subtype($options)->all();
+//$response = Pokemon::Rarity($options)->all();
 //print_r($response);

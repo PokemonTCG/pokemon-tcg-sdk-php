@@ -61,7 +61,7 @@ class JsonResource implements ResourceInterface
     /**
      * @return Request
      */
-    protected function prepare()
+    protected function prepare(): Request
     {
         return new Request($this->method, $this->resource);
     }
@@ -71,70 +71,29 @@ class JsonResource implements ResourceInterface
      *
      * @return mixed
      */
-    protected function getResponseData(ResponseInterface $response)
+    protected function getResponseData(ResponseInterface $response): mixed
     {
         return json_decode($response->getBody()->getContents());
     }
 
     /**
-     * @param stdClass $data
+     * @param stdClass $response
      *
      * @return array
      */
-    protected function transformAll(stdClass $data)
+    protected function transformAll(stdClass $response): array
     {
-        return $this->getFirstProperty($data);
-    }
-
-    /**
-     * @param stdClass $data
-     *
-     * @return string|null
-     */
-    protected function getFirstPropertyName(stdClass $data)
-    {
-        $attributes = get_object_vars($data);
-
-        return (count($attributes) > 0) ? array_keys($attributes)[0] : null;
-    }
-
-    /**
-     * @param stdClass $data
-     *
-     * @return mixed
-     */
-    protected function getFirstProperty(stdClass $data)
-    {
-        return $data->{$this->getFirstPropertyName($data)};
-    }
-
-    /**
-     * @param stdClass $data
-     *
-     * @return Model|null
-     */
-    protected function transform(stdClass $data)
-    {
-        $model = null;
-
-        $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($this->resource));
-        if (class_exists($class)) {
-            /** @var Model $model */
-            $model = new $class;
-            $model->fill($data);
-        }
-
-        return $model;
+        return $response->data;
     }
 
     /**
      * @return array
      * @throws GuzzleException
      */
-    public function all()
+    public function all(): array
     {
-        $data = $this->getResponseData($this->client->send($this->prepare()));
+        $response = $this->getResponseData($this->client->send($this->prepare()));
 
-        return $this->transformAll($data);
+        return $this->transformAll($response);
     }
 }

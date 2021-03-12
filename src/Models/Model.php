@@ -60,7 +60,15 @@ class Model
                 $value = $this->parse($attribute, $value);
             }
 
-            $method = 'set' . ucfirst($attribute);
+            switch ($attribute) {
+                case '1stEditionNormal':
+                    $method = 'setFirstEditionNormal';
+                    break;
+
+                default:
+                    $method = 'set' . ucfirst($attribute);
+            }
+
             if (isset($this->methods[$method])) {
                 $this->{$method}($value);
             }
@@ -83,12 +91,16 @@ class Model
                     $class = get_class($this) . 'Images';
                     break;
 
-                case 'tcgplayer':
-                    $class = '\\Pokemon\\Models\\TCGPlayer';
-                    break;
-
                 case 'legalities':
                     $class = '\\Pokemon\\Models\\Legalities';
+                    break;
+
+                case 'prices':
+                    $class = '\\Pokemon\\Models\\Prices';
+                    break;
+
+                case 'tcgplayer':
+                    $class = '\\Pokemon\\Models\\TCGPlayer';
                     break;
 
                 default:

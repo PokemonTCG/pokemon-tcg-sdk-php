@@ -11,43 +11,43 @@ class CardImages extends Model
 {
 
     /**
-     * @var string
+     * @var string|null
      */
     private $small;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $large;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSmall(): string
+    public function getSmall(): ?string
     {
         return $this->small;
     }
 
     /**
-     * @param string $small
+     * @param string|null $small
      */
-    public function setSmall(string $small)
+    public function setSmall(?string $small)
     {
         $this->small = $small;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLarge(): string
+    public function getLarge(): ?string
     {
         return $this->large;
     }
 
     /**
-     * @param string $large
+     * @param string|null $large
      */
-    public function setLarge(string $large)
+    public function setLarge(?string $large)
     {
         $this->large = $large;
     }

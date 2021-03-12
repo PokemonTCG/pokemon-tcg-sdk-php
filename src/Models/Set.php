@@ -36,27 +36,27 @@ class Set extends Model
     private $total;
 
     /**
-     * @var Legalities
+     * @var Legalities|null
      */
     private $legalities;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $ptcgoCode;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $releaseDate;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $updatedAt;
 
     /**
-     * @var SetImages
+     * @var SetImages|null
      */
     private $images;
 
@@ -141,81 +141,81 @@ class Set extends Model
     }
 
     /**
-     * @return Legalities
+     * @return Legalities|null
      */
-    public function getLegalities(): Legalities
+    public function getLegalities(): ?Legalities
     {
         return $this->legalities;
     }
 
     /**
-     * @param Legalities $legalities
+     * @param Legalities|null $legalities
      */
-    public function setLegalities(Legalities $legalities)
+    public function setLegalities(?Legalities $legalities)
     {
         $this->legalities = $legalities;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPtcgoCode(): string
+    public function getPtcgoCode(): ?string
     {
         return $this->ptcgoCode;
     }
 
     /**
-     * @param string $ptcgoCode
+     * @param string|null $ptcgoCode
      */
-    public function setPtcgoCode(string $ptcgoCode)
+    public function setPtcgoCode(?string $ptcgoCode)
     {
         $this->ptcgoCode = $ptcgoCode;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getReleaseDate(): string
+    public function getReleaseDate(): ?string
     {
         return $this->releaseDate;
     }
 
     /**
-     * @param string $releaseDate
+     * @param string|null $releaseDate
      */
-    public function setReleaseDate(string $releaseDate)
+    public function setReleaseDate(?string $releaseDate)
     {
         $this->releaseDate = $releaseDate;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUpdatedAt(): string
+    public function getUpdatedAt(): ?string
     {
         return $this->updatedAt;
     }
 
     /**
-     * @param string $updatedAt
+     * @param string|null $updatedAt
      */
-    public function setUpdatedAt(string $updatedAt)
+    public function setUpdatedAt(?string $updatedAt)
     {
         $this->updatedAt = $updatedAt;
     }
 
     /**
-     * @return SetImages
+     * @return SetImages|null
      */
-    public function getImages(): SetImages
+    public function getImages(): ?SetImages
     {
         return $this->images;
     }
 
     /**
-     * @param SetImages $images
+     * @param SetImages|null $images
      */
-    public function setImages(SetImages $images)
+    public function setImages(?SetImages $images)
     {
         $this->images = $images;
     }

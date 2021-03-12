@@ -21,22 +21,22 @@ class Card extends Model
     private $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $supertype;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $subtypes;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $hp;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $types;
 
@@ -51,32 +51,32 @@ class Card extends Model
     private $evolvesTo;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $abilities;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $attacks;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $weaknesses;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $resistances;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $retreatCost;
 
     /**
-     * @var int
+     * @var int|null
      */
     private $convertedRetreatCost;
 
@@ -86,37 +86,37 @@ class Card extends Model
     private $set;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $number;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $artist;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $rarity;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $flavorText;
 
     /**
-     * @var array
+     * @var array|null
      */
     private $nationalPokedexNumbers;
 
     /**
-     * @var Legalities
+     * @var Legalities|null
      */
     private $legalities;
 
     /**
-     * @var CardImages
+     * @var CardImages|null
      */
     private $images;
 
@@ -131,7 +131,7 @@ class Card extends Model
     private $ancientTrait;
 
     /**
-     * @var TCGPlayer
+     * @var TCGPlayer|null
      */
     private $tcgplayer;
 
@@ -168,65 +168,65 @@ class Card extends Model
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSupertype(): string
+    public function getSupertype(): ?string
     {
         return $this->supertype;
     }
 
     /**
-     * @param string $supertype
+     * @param string|null $supertype
      */
-    public function setSupertype(string $supertype)
+    public function setSupertype(?string $supertype)
     {
         $this->supertype = $supertype;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getSubtypes(): array
+    public function getSubtypes(): ?array
     {
         return $this->subtypes;
     }
 
     /**
-     * @param array $subtypes
+     * @param array|null $subtypes
      */
-    public function setSubtypes(array $subtypes)
+    public function setSubtypes(?array $subtypes)
     {
         $this->subtypes = $subtypes;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getHp(): string
+    public function getHp(): ?string
     {
         return $this->hp;
     }
 
     /**
-     * @param string $hp
+     * @param string|null $hp
      */
-    public function setHp(string $hp)
+    public function setHp(?string $hp)
     {
         $this->hp = $hp;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getTypes(): array
+    public function getTypes(): ?array
     {
         return $this->types;
     }
 
     /**
-     * @param array $types
+     * @param array|null $types
      */
-    public function setTypes(array $types)
+    public function setTypes(?array $types)
     {
         $this->types = $types;
     }
@@ -242,7 +242,7 @@ class Card extends Model
     /**
      * @param string|null $evolvesFrom
      */
-    public function setEvolvesFrom(string $evolvesFrom)
+    public function setEvolvesFrom(?string $evolvesFrom)
     {
         $this->evolvesFrom = $evolvesFrom;
     }
@@ -264,97 +264,97 @@ class Card extends Model
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getAbilities(): array
+    public function getAbilities(): ?array
     {
         return $this->abilities;
     }
 
     /**
-     * @param array $abilities
+     * @param array|null $abilities
      */
-    public function setAbilities(array $abilities)
+    public function setAbilities(?array $abilities)
     {
         $this->abilities = $abilities;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getAttacks(): array
+    public function getAttacks(): ?array
     {
         return $this->attacks;
     }
 
     /**
-     * @param array $attacks
+     * @param array|null $attacks
      */
-    public function setAttacks(array $attacks)
+    public function setAttacks(?array $attacks)
     {
         $this->attacks = $attacks;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getWeaknesses(): array
+    public function getWeaknesses(): ?array
     {
         return $this->weaknesses;
     }
 
     /**
-     * @param array $weaknesses
+     * @param array|null $weaknesses
      */
-    public function setWeaknesses(array $weaknesses)
+    public function setWeaknesses(?array $weaknesses)
     {
         $this->weaknesses = $weaknesses;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getResistances(): array
+    public function getResistances(): ?array
     {
         return $this->resistances;
     }
 
     /**
-     * @param array $resistances
+     * @param array|null $resistances
      */
-    public function setResistances(array $resistances)
+    public function setResistances(?array $resistances)
     {
         $this->resistances = $resistances;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getRetreatCost(): array
+    public function getRetreatCost(): ?array
     {
         return $this->retreatCost;
     }
 
     /**
-     * @param array $retreatCost
+     * @param array|null $retreatCost
      */
-    public function setRetreatCost(array $retreatCost)
+    public function setRetreatCost(?array $retreatCost)
     {
         $this->retreatCost = $retreatCost;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getConvertedRetreatCost(): int
+    public function getConvertedRetreatCost(): ?int
     {
         return $this->convertedRetreatCost;
     }
 
     /**
-     * @param int $convertedRetreatCost
+     * @param int|null $convertedRetreatCost
      */
-    public function setConvertedRetreatCost(int $convertedRetreatCost)
+    public function setConvertedRetreatCost(?int $convertedRetreatCost)
     {
         $this->convertedRetreatCost = $convertedRetreatCost;
     }
@@ -376,113 +376,113 @@ class Card extends Model
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getNumber(): string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
 
     /**
-     * @param string $number
+     * @param string|null $number
      */
-    public function setNumber(string $number)
+    public function setNumber(?string $number)
     {
         $this->number = $number;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getArtist(): string
+    public function getArtist(): ?string
     {
         return $this->artist;
     }
 
     /**
-     * @param string $artist
+     * @param string|null $artist
      */
-    public function setArtist(string $artist)
+    public function setArtist(?string $artist)
     {
         $this->artist = $artist;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRarity(): string
+    public function getRarity(): ?string
     {
         return $this->rarity;
     }
 
     /**
-     * @param string $rarity
+     * @param string|null $rarity
      */
-    public function setRarity(string $rarity)
+    public function setRarity(?string $rarity)
     {
         $this->rarity = $rarity;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFlavorText(): string
+    public function getFlavorText(): ?string
     {
         return $this->flavorText;
     }
 
     /**
-     * @param string $flavorText
+     * @param string|null $flavorText
      */
-    public function setFlavorText(string $flavorText)
+    public function setFlavorText(?string $flavorText)
     {
         $this->flavorText = $flavorText;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getNationalPokedexNumbers(): array
+    public function getNationalPokedexNumbers(): ?array
     {
         return $this->nationalPokedexNumbers;
     }
 
     /**
-     * @param array $nationalPokedexNumbers
+     * @param array|null $nationalPokedexNumbers
      */
-    public function setNationalPokedexNumbers(array $nationalPokedexNumbers)
+    public function setNationalPokedexNumbers(?array $nationalPokedexNumbers)
     {
         $this->nationalPokedexNumbers = $nationalPokedexNumbers;
     }
 
     /**
-     * @return Legalities
+     * @return Legalities|null
      */
-    public function getLegalities(): Legalities
+    public function getLegalities(): ?Legalities
     {
         return $this->legalities;
     }
 
     /**
-     * @param Legalities $legalities
+     * @param Legalities|null $legalities
      */
-    public function setLegalities(Legalities $legalities)
+    public function setLegalities(?Legalities $legalities)
     {
         $this->legalities = $legalities;
     }
 
     /**
-     * @return CardImages
+     * @return CardImages|null
      */
-    public function getImages(): CardImages
+    public function getImages(): ?CardImages
     {
         return $this->images;
     }
 
     /**
-     * @param CardImages $images
+     * @param CardImages|null $images
      */
-    public function setImages(CardImages $images)
+    public function setImages(?CardImages $images)
     {
         $this->images = $images;
     }
@@ -498,7 +498,7 @@ class Card extends Model
     /**
      * @param array|null $rules
      */
-    public function setRules(array $rules)
+    public function setRules(?array $rules)
     {
         $this->rules = $rules;
     }
@@ -514,23 +514,23 @@ class Card extends Model
     /**
      * @param AncientTrait|null $ancientTrait
      */
-    public function setAncientTrait(AncientTrait $ancientTrait)
+    public function setAncientTrait(?AncientTrait $ancientTrait)
     {
         $this->ancientTrait = $ancientTrait;
     }
 
     /**
-     * @return TCGPlayer
+     * @return TCGPlayer|null
      */
-    public function getTcgplayer(): TCGPlayer
+    public function getTcgplayer(): ?TCGPlayer
     {
         return $this->tcgplayer;
     }
 
     /**
-     * @param TCGPlayer $tcgplayer
+     * @param TCGPlayer|null $tcgplayer
      */
-    public function setTcgplayer(TCGPlayer $tcgplayer)
+    public function setTcgplayer(?TCGPlayer $tcgplayer)
     {
         $this->tcgplayer = $tcgplayer;
     }

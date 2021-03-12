@@ -30,7 +30,7 @@ class Pokemon
      *
      * @return QueriableResourceInterface
      */
-    public static function Card(array $options = [])
+    public static function Card(array $options = []): QueriableResourceInterface
     {
         return self::getQueriableResource('cards', $options);
     }
@@ -40,7 +40,7 @@ class Pokemon
      *
      * @return QueriableResourceInterface
      */
-    public static function Set(array $options = [])
+    public static function Set(array $options = []): QueriableResourceInterface
     {
         return self::getQueriableResource('sets', $options);
     }
@@ -50,7 +50,7 @@ class Pokemon
      *
      * @return ResourceInterface
      */
-    public static function Type(array $options = [])
+    public static function Type(array $options = []): ResourceInterface
     {
         return self::getJsonResource('types', $options);
     }
@@ -60,7 +60,17 @@ class Pokemon
      *
      * @return ResourceInterface
      */
-    public static function Supertype(array $options = [])
+    public static function Subtype(array $options = []): ResourceInterface
+    {
+        return self::getJsonResource('subtypes', $options);
+    }
+
+    /**
+     * @param array $options
+     *
+     * @return ResourceInterface
+     */
+    public static function Supertype(array $options = []): ResourceInterface
     {
         return self::getJsonResource('supertypes', $options);
     }
@@ -70,9 +80,9 @@ class Pokemon
      *
      * @return ResourceInterface
      */
-    public static function Subtype(array $options = [])
+    public static function Rarity(array $options = []): ResourceInterface
     {
-        return self::getJsonResource('subtypes', $options);
+        return self::getJsonResource('rarities', $options);
     }
 
     /**
@@ -81,7 +91,7 @@ class Pokemon
      *
      * @return QueriableResourceInterface
      */
-    private static function getQueriableResource($type, array $options = [])
+    private static function getQueriableResource($type, array $options = []): QueriableResourceInterface
     {
         if (!array_key_exists($type, self::$cache['resources']) || self::haveOptionsBeenUpdated($type, $options)) {
             self::$cache['options'][$type] = $options;
@@ -96,7 +106,7 @@ class Pokemon
      *
      * @return ResourceInterface
      */
-    private static function getJsonResource($type, array $options = [])
+    private static function getJsonResource($type, array $options = []): ResourceInterface
     {
         if (!array_key_exists($type, self::$cache['resources']) || self::haveOptionsBeenUpdated($type, $options)) {
             self::$cache['options'][$type] = $options;
@@ -111,7 +121,7 @@ class Pokemon
      *
      * @return bool
      */
-    private static function haveOptionsBeenUpdated($key, array $options = [])
+    private static function haveOptionsBeenUpdated($key, array $options = []): bool
     {
         if (array_key_exists($key, self::$cache)) {
             return (self::$cache[$key] != $options);

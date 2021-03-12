@@ -16,61 +16,61 @@ class TCGPlayer extends Model
     private $url;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $updatedAt;
 
     /**
-     * @var array
+     * @var Prices|null
      */
     private $prices;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUrl(): string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
 
     /**
-     * @param string $url
+     * @param string|null $url
      */
-    public function setUrl(string $url)
+    public function setUrl(?string $url)
     {
         $this->url = $url;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUpdatedAt(): string
+    public function getUpdatedAt(): ?string
     {
         return $this->updatedAt;
     }
 
     /**
-     * @param string $updatedAt
+     * @param string|null $updatedAt
      */
-    public function setUpdatedAt(string $updatedAt)
+    public function setUpdatedAt(?string $updatedAt)
     {
         $this->updatedAt = $updatedAt;
     }
 
-//    /**
-//     * @return array
-//     */
-//    public function getPrices(): array
-//    {
-//        return $this->prices;
-//    }
-//
-//    /**
-//     * @param array $prices
-//     */
-//    public function setPrices(array $prices)
-//    {
-//        $this->prices = $prices;
-//    }
+    /**
+     * @return Prices|null
+     */
+    public function getPrices(): ?Prices
+    {
+        return $this->prices;
+    }
+
+    /**
+     * @param Prices|null $prices
+     */
+    public function setPrices(?Prices $prices)
+    {
+        $this->prices = $prices;
+    }
 
 }

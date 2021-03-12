@@ -31,7 +31,7 @@ class QueryableResource extends JsonResource implements QueriableResourceInterfa
     /**
      * @return Request
      */
-    protected function prepare()
+    protected function prepare(): Request
     {
         $uri = $this->resource;
 
@@ -53,7 +53,7 @@ class QueryableResource extends JsonResource implements QueriableResourceInterfa
      *
      * @return QueriableResourceInterface
      */
-    public function where(array $query)
+    public function where(array $query): QueriableResourceInterface
     {
         $this->query = array_merge($this->query, $query);
 
@@ -63,13 +63,32 @@ class QueryableResource extends JsonResource implements QueriableResourceInterfa
     /**
      * @param stdClass $data
      *
+     * @return Model|null
+     */
+    protected function transform(stdClass $data): ?Model
+    {
+        $model = null;
+        $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($this->resource));
+
+        if (class_exists($class)) {
+            /** @var Model $model */
+            $model = new $class;
+            $model->fill($data);
+        }
+
+        return $model;
+    }
+
+    /**
+     * @param stdClass $response
+     *
      * @return array
      */
-    protected function transformAll(stdClass $data)
+    protected function transformAll(stdClass $response): array
     {
         return array_map(function ($data) {
             return $this->transform($data);
-        }, $this->getFirstProperty($data));
+        }, $response->data);
     }
 
     /**
@@ -79,7 +98,7 @@ class QueryableResource extends JsonResource implements QueriableResourceInterfa
      * @throws InvalidArgumentException
      * @throws GuzzleException
      */
-    public function find($identifier)
+    public function find($identifier): ?Model
     {
         $this->identifier = $identifier;
         try {
