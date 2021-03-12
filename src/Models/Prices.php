@@ -96,7 +96,7 @@ class Prices extends Model
 
     /**
      * @param string $attribute
-     * @param mixed  $value
+     * @param mixed $value
      *
      * @return mixed|Model
      */

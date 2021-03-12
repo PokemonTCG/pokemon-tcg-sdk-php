@@ -7,7 +7,6 @@ use Doctrine\Inflector\InflectorFactory;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
-use Pokemon\Models\Model;
 use Pokemon\Pokemon;
 use Pokemon\Resources\Interfaces\ResourceInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -45,14 +44,22 @@ class JsonResource implements ResourceInterface
      * Request constructor.
      *
      * @param string $resource
-     * @param array  $options
+     * @param array $options
+     * @param string|null $apiKey
      */
-    public function __construct($resource, array $options = [])
+    public function __construct($resource, array $options = [], ?string $apiKey = null)
     {
         $defaults = [
             'base_uri' => Pokemon::API_URL,
-            'verify'   => false,
+            'verify' => false,
         ];
+
+        if (!empty($apiKey)) {
+            $defaults['headers'] = [
+                'X-Api-Key' => $apiKey,
+            ];
+        }
+
         $this->resource = $resource;
         $this->client = new Client(array_merge($defaults, $options));
         $this->inflector = InflectorFactory::create()->build();
