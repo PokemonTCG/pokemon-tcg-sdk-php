@@ -76,9 +76,9 @@ class JsonResource implements ResourceInterface
     /**
      * @param ResponseInterface $response
      *
-     * @return mixed
+     * @return stdClass
      */
-    protected function getResponseData(ResponseInterface $response): mixed
+    protected function getResponseData(ResponseInterface $response): stdClass
     {
         return json_decode($response->getBody()->getContents());
     }
