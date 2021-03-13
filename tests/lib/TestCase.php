@@ -28,28 +28,28 @@ abstract class TestCase extends PHPUnitTestCase
         $this->clientOptions = array_merge($this->clientOptions, ['verify' => getenv('CLIENT_OPTION_VERIFY')]);
     }
 
-	/**
-	 * @return string
-	 */
-    abstract protected function fixtureDirectory();
+    /**
+     * @return string
+     */
+    abstract protected function fixtureDirectory(): string;
 
-	/**
-	 * @param $file
-	 *
-	 * @return string
-	 */
-	protected function getFixture($file)
-	{
-		$path = __DIR__ . '/fixtures/' . $this->fixtureDirectory() . '/';
-		return file_get_contents($path . $file);
-	}
+    /**
+     * @param $file
+     *
+     * @return string
+     */
+    protected function getFixture($file): string
+    {
+        $path = __DIR__ . '/fixtures/' . $this->fixtureDirectory() . '/';
+        return file_get_contents($path . $file);
+    }
 
     /**
      * Call this in setUp() to mock api responses in test cases.
      *
      * @param array $responses
      */
-    protected function setUpClientResponses(array $responses = [])
+    protected function setUpClientResponses(array $responses = []): void
     {
         $mock = new MockHandler($responses);
         $handler = HandlerStack::create($mock);

@@ -41,6 +41,11 @@ class Card extends Model
     private $types;
 
     /**
+     * @var array|null
+     */
+    private $rules;
+
+    /**
      * @var string|null
      */
     private $evolvesFrom;
@@ -119,11 +124,6 @@ class Card extends Model
      * @var CardImages|null
      */
     private $images;
-
-    /**
-     * @var array|null
-     */
-    private $rules;
 
     /**
      * @var AncientTrait|null
@@ -229,6 +229,22 @@ class Card extends Model
     public function setTypes(?array $types)
     {
         $this->types = $types;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getRules(): ?array
+    {
+        return $this->rules;
+    }
+
+    /**
+     * @param array|null $rules
+     */
+    public function setRules(?array $rules)
+    {
+        $this->rules = $rules;
     }
 
     /**
@@ -485,22 +501,6 @@ class Card extends Model
     public function setImages(?CardImages $images)
     {
         $this->images = $images;
-    }
-
-    /**
-     * @return array|null
-     */
-    public function getRules(): ?array
-    {
-        return $this->rules;
-    }
-
-    /**
-     * @param array|null $rules
-     */
-    public function setRules(?array $rules)
-    {
-        $this->rules = $rules;
     }
 
     /**

@@ -14,7 +14,7 @@ class SubtypeTest extends TestCase
     /**
      * @return string
      */
-    protected function fixtureDirectory()
+    protected function fixtureDirectory(): string
     {
         return 'subtypes';
     }
@@ -34,11 +34,12 @@ class SubtypeTest extends TestCase
     /**
      * Get all subtypes
      */
-    public function testAllReturnsAllSubtypes()
+    public function testAllReturnsAllSubtypes(): void
     {
-        $subtypes = Pokemon::Subtype($this->clientOptions)->all();
+        Pokemon::Options($this->clientOptions);
+        $subtypes = Pokemon::Subtype()->all();
 
-        $this->assertEquals(17, count($subtypes));
-        $this->assertArraySubset(['MEGA', 'Item', 'Level Up', 'Supporter'], $subtypes);
+        $this->assertEquals(23, count($subtypes));
+        $this->assertArraySubset(['BREAK', 'Baby', 'Basic', 'EX', 'GX'], $subtypes);
     }
 }

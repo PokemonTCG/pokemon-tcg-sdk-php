@@ -1,1876 +1,396 @@
 {
-    "cards": [
+  "data": [
+    {
+      "id": "xy6-1",
+      "name": "Exeggcute",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Exeggutor"
+      ],
+      "attacks": [
         {
-            "id": "xy6-27",
-            "name": "Natu",
-            "nationalPokedexNumber": 177,
-            "imageUrl": "https://images.pokemontcg.io/xy6/27.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/27_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "27",
-            "artist": "Atsuko Nishida",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Psychic"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Peck",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Psychic",
-                    "value": "×2"
-                }
-            ]
+          "name": "Loathe",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, switch this Pokémon with 1 of your Benched Pokémon."
         },
         {
-            "id": "xy6-1",
-            "name": "Exeggcute",
-            "nationalPokedexNumber": 102,
-            "imageUrl": "https://images.pokemontcg.io/xy6/1.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/1_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "1",
-            "artist": "Tomokazu Komiya",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Loathe",
-                    "text": "Flip a coin. If heads, switch this Pokémon with 1 of your Benched Pokémon.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Ram",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-3",
-            "name": "Wurmple",
-            "nationalPokedexNumber": 265,
-            "imageUrl": "https://images.pokemontcg.io/xy6/3.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/3_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "3",
-            "artist": "Naoyo Kimura",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Flock",
-                    "text": "Search your deck for Wurmple and put it onto your Bench. Shuffle your deck afterward.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Tackle",
-                    "text": "",
-                    "damage": "20",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-9",
-            "name": "Nincada",
-            "nationalPokedexNumber": 290,
-            "imageUrl": "https://images.pokemontcg.io/xy6/9.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/9_highres.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "9",
-            "artist": "Kyoko Umemoto",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Slight Intrusion",
-                    "text": "This Pokémon does 10 damage to itself.",
-                    "damage": "20",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-28",
-            "name": "Natu",
-            "nationalPokedexNumber": 177,
-            "imageUrl": "https://images.pokemontcg.io/xy6/28.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/28_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "ancientTrait": {
-                "name": "Δ Plus",
-                "text": "If your opponent's Pokémon is Knocked Out by damage from an attack of this Pokémon, take 1 more Prize card."
-            },
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "28",
-            "artist": "Kagemaru Himeno",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Psychic"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Psychic",
-                        "Colorless"
-                    ],
-                    "name": "Psywave",
-                    "text": "This attack does 10 damage times the amount of Energy attached to your opponent's Active Pokémon.",
-                    "damage": "10×",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Psychic",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-12",
-            "name": "Tropius",
-            "nationalPokedexNumber": 357,
-            "imageUrl": "https://images.pokemontcg.io/xy6/12.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/12_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "110",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "12",
-            "artist": "Kyoko Umemoto",
-            "rarity": "Uncommon",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Stomp",
-                    "text": "Flip a coin. If heads, this attack does 20 more damage.",
-                    "damage": "50+",
-                    "convertedEnergyCost": 3
-                },
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Solar Beam",
-                    "text": "",
-                    "damage": "80",
-                    "convertedEnergyCost": 4
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-13",
-            "name": "Victini",
-            "nationalPokedexNumber": 494,
-            "imageUrl": "https://images.pokemontcg.io/xy6/13.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/13_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "70",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "13",
-            "artist": "Kouki Saitou",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fire"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Me First",
-                    "text": "Draw a card.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Fire",
-                        "Colorless"
-                    ],
-                    "name": "Psy Bolt",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
-                    "damage": "20",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Water",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-16",
-            "name": "Articuno",
-            "nationalPokedexNumber": 144,
-            "imageUrl": "https://images.pokemontcg.io/xy6/16.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/16_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "120",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "16",
-            "artist": "Naoki Saito",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Water"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Water"
-                    ],
-                    "name": "Find Ice",
-                    "text": "Search your deck for up to 3 Water Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Water",
-                        "Water",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Freezing Wind",
-                    "text": "",
-                    "damage": "100",
-                    "convertedEnergyCost": 4
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Metal",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-17",
-            "name": "Articuno",
-            "nationalPokedexNumber": 144,
-            "imageUrl": "https://images.pokemontcg.io/xy6/17.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/17_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "ancientTrait": {
-                "name": "Δ Plus",
-                "text": "If your opponent's Pokémon is Knocked Out by damage from an attack of this Pokémon, take 1 more Prize card."
-            },
-            "hp": "120",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "17",
-            "artist": "5ban Graphics",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Water"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Water"
-                    ],
-                    "name": "Chilling Sigh",
-                    "text": "Your opponent's Active Pokémon is now Asleep.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Water",
-                        "Water",
-                        "Colorless"
-                    ],
-                    "name": "Tri Edge",
-                    "text": "Flip 3 coins. This attack does 40 more damage for each heads.",
-                    "damage": "20+",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Metal",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-18",
-            "name": "Wingull",
-            "nationalPokedexNumber": 278,
-            "imageUrl": "https://images.pokemontcg.io/xy6/18.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/18_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "18",
-            "artist": "MAHOU",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Water"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Water"
-                    ],
-                    "name": "Water Gun",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-20",
-            "name": "Pikachu",
-            "nationalPokedexNumber": 25,
-            "imageUrl": "https://images.pokemontcg.io/xy6/20.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/20_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "20",
-            "artist": "Naoki Saito",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Lightning"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Tail Whip",
-                    "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Electro Ball",
-                    "text": "",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Metal",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-21",
-            "name": "Voltorb",
-            "nationalPokedexNumber": 100,
-            "imageUrl": "https://images.pokemontcg.io/xy6/21.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/21_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "21",
-            "artist": "Suwama Chiaki",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Lightning"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Lightning"
-                    ],
-                    "name": "Thunder Wave",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Big Explosion",
-                    "text": "This Pokémon does 60 damage to itself.",
-                    "damage": "60",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Metal",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-23",
-            "name": "Zapdos",
-            "nationalPokedexNumber": 145,
-            "imageUrl": "https://images.pokemontcg.io/xy6/23.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/23_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "120",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "23",
-            "artist": "Hitoshi Ariga",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Lightning"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Lightning"
-                    ],
-                    "name": "Drill Peck",
-                    "text": "",
-                    "damage": "20",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Lightning",
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Raging Thunder",
-                    "text": "This attack does 40 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
-                    "damage": "120",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-24",
-            "name": "Electrike",
-            "nationalPokedexNumber": 309,
-            "imageUrl": "https://images.pokemontcg.io/xy6/24.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/24_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "24",
-            "artist": "Akira Komayama",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Lightning"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Bite",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Metal",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-30",
-            "name": "Shuppet",
-            "nationalPokedexNumber": 353,
-            "imageUrl": "https://images.pokemontcg.io/xy6/30.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/30_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "30",
-            "artist": "Yukiko Baba",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Psychic"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Psychic"
-                    ],
-                    "name": "Bleh",
-                    "text": "Discard a Special Energy attached to 1 of your opponent's Pokémon.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Darkness",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-33",
-            "name": "Deoxys",
-            "nationalPokedexNumber": 386,
-            "imageUrl": "https://images.pokemontcg.io/xy6/33.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/33_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "110",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "33",
-            "artist": "kawayoo",
-            "rarity": "Rare Holo",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Psychic"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Close Encounter",
-                    "text": "If you go first, you can use this attack on your first turn. Draw 2 cards.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Psychic",
-                        "Colorless"
-                    ],
-                    "name": "Overdrive Smash",
-                    "text": "During your next turn, this Pokémon's Overdrive Smash attack does 60 more damage (before applying Weakness and Resistance).",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Psychic",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-36",
-            "name": "Gligar",
-            "nationalPokedexNumber": 207,
-            "imageUrl": "https://images.pokemontcg.io/xy6/36.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/36_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "70",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "36",
-            "artist": "Suwama Chiaki",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fighting"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Stun Poison",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed and Poisoned.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Water",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-38",
-            "name": "Binacle",
-            "nationalPokedexNumber": 688,
-            "imageUrl": "https://images.pokemontcg.io/xy6/38.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/38_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "38",
-            "artist": "Kanako Eo",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fighting"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fighting"
-                    ],
-                    "name": "Sand Attack",
-                    "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Fighting",
-                        "Fighting",
-                        "Colorless"
-                    ],
-                    "name": "Mud-Slap",
-                    "text": "",
-                    "damage": "40",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Grass",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-39",
-            "name": "Hawlucha",
-            "nationalPokedexNumber": 701,
-            "imageUrl": "https://images.pokemontcg.io/xy6/39.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/39_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "80",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "39",
-            "artist": "Shin Nagasawa",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fighting"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fighting"
-                    ],
-                    "name": "Tackle",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Midair Strike",
-                    "text": "Flip a coin. If heads, this attack does 40 more damage.",
-                    "damage": "40+",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-40",
-            "name": "Absol",
-            "nationalPokedexNumber": 359,
-            "imageUrl": "https://images.pokemontcg.io/xy6/40.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/40_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "ability": {
-                "name": "Cursed Eyes",
-                "text": "When you play this Pokémon from your hand onto your Bench, you may move 3 damage counters from 1 of your opponent's Pokémon to another of his or her Pokémon."
-            },
-            "hp": "100",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "40",
-            "artist": "Kagemaru Himeno",
-            "rarity": "Rare Holo",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Darkness"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Darkness",
-                        "Colorless"
-                    ],
-                    "name": "Mach Claw",
-                    "text": "This attack's damage isn't affected by Resistance.",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Psychic",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-41",
-            "name": "Inkay",
-            "nationalPokedexNumber": 686,
-            "imageUrl": "https://images.pokemontcg.io/xy6/41.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/41_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "41",
-            "artist": "Akira Komayama",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Darkness"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Darkness"
-                    ],
-                    "name": "Rip Off",
-                    "text": "Choose a random card from your opponent's hand. Your opponent reveals that card and shuffles it into his or her deck.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Darkness",
-                        "Colorless"
-                    ],
-                    "name": "Psybeam",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Confused.",
-                    "damage": "20",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Psychic",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-42",
-            "name": "Jirachi",
-            "nationalPokedexNumber": 385,
-            "imageUrl": "https://images.pokemontcg.io/xy6/42.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/42_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "70",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "42",
-            "artist": "Sanosuke Sakuma",
-            "rarity": "Rare Holo",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Metal"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Metal"
-                    ],
-                    "name": "Diminutive Desire",
-                    "text": "Look at the top 7 cards of your deck and put 1 of them into your hand. Shuffle the other cards back into your deck.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Metal",
-                        "Colorless"
-                    ],
-                    "name": "Doom Desire",
-                    "text": "Discard all Energy attached to this Pokémon. The Defending Pokémon is Knocked Out at the end of your opponent's next turn.",
-                    "damage": "",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Psychic",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-43",
-            "name": "Togepi",
-            "nationalPokedexNumber": 175,
-            "imageUrl": "https://images.pokemontcg.io/xy6/43.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/43_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "43",
-            "artist": "HiRON",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fairy"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Sweet Kiss",
-                    "text": "Your opponent draws a card.",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Metal",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Darkness",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-47",
-            "name": "Carbink",
-            "nationalPokedexNumber": 703,
-            "imageUrl": "https://images.pokemontcg.io/xy6/47.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/47_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "ability": {
-                "name": "Jewel Armor",
-                "text": "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's)."
-            },
-            "hp": "70",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "47",
-            "artist": "Akira Komayama",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fairy"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fairy",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Spin Tackle",
-                    "text": "Flip a coin. If tails, this Pokémon does 20 damage to itself.",
-                    "damage": "60",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Metal",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Darkness",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-48",
-            "name": "Klefki",
-            "nationalPokedexNumber": 707,
-            "imageUrl": "https://images.pokemontcg.io/xy6/48.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/48_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "48",
-            "artist": "Kagemaru Himeno",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Fairy"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fairy"
-                    ],
-                    "name": "Look for Keys",
-                    "text": "Reveal cards from the top of your deck until you reveal an Item card. Put it into your hand. Shuffle the other cards back into your deck.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Fairy",
-                        "Colorless"
-                    ],
-                    "name": "Play Rough",
-                    "text": "Flip a coin. If heads, this attack does 20 more damage.",
-                    "damage": "20+",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Metal",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Darkness",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-49",
-            "name": "Dratini",
-            "nationalPokedexNumber": 147,
-            "imageUrl": "https://images.pokemontcg.io/xy6/49.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/49_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "49",
-            "artist": "Miki Tanaka",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Dragon"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Hook",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Slam",
-                    "text": "Flip 2 coins. This attack does 20 damage times the number of heads.",
-                    "damage": "20×",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fairy",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-68",
-            "name": "Dunsparce",
-            "nationalPokedexNumber": 206,
-            "imageUrl": "https://images.pokemontcg.io/xy6/68.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/68_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "number": "68",
-            "artist": "Yuka Morii",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Burrow",
-                    "text": "Discard the top card of your opponent's deck.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Rollout",
-                    "text": "",
-                    "damage": "20",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-54",
-            "name": "Bagon",
-            "nationalPokedexNumber": 371,
-            "imageUrl": "https://images.pokemontcg.io/xy6/54.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/54_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "54",
-            "artist": "Kagemaru Himeno",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Dragon"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fire",
-                        "Colorless"
-                    ],
-                    "name": "Continuous Headbutt",
-                    "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads.",
-                    "damage": "30×",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fairy",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-55",
-            "name": "Bagon",
-            "nationalPokedexNumber": 371,
-            "imageUrl": "https://images.pokemontcg.io/xy6/55.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/55_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "55",
-            "artist": "kirisAki",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Dragon"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Leer",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Fire",
-                        "Water"
-                    ],
-                    "name": "Almost Flight",
-                    "text": "This Pokémon does 10 damage to itself.",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fairy",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-63",
-            "name": "Reshiram",
-            "nationalPokedexNumber": 643,
-            "imageUrl": "https://images.pokemontcg.io/xy6/63.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/63_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "ability": {
-                "name": "Turboblaze",
-                "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may attach a Fire Energy card from your hand to 1 of your Dragon Pokémon."
-            },
-            "hp": "130",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "63",
-            "artist": "Kouki Saitou",
-            "rarity": "Rare Holo",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Dragon"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Fire",
-                        "Fire",
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Bright Wing",
-                    "text": "Discard a Fire Energy attached to this Pokémon.",
-                    "damage": "110",
-                    "convertedEnergyCost": 4
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fairy",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-64",
-            "name": "Zekrom",
-            "nationalPokedexNumber": 644,
-            "imageUrl": "https://images.pokemontcg.io/xy6/64.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/64_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "130",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "64",
-            "artist": "kawayoo",
-            "rarity": "Rare Holo",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Dragon"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Lightning"
-                    ],
-                    "name": "Energy Stream",
-                    "text": "Attach a basic Energy card from your discard pile to this Pokémon.",
-                    "damage": "30",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Fire",
-                        "Lightning",
-                        "Lightning",
-                        "Colorless"
-                    ],
-                    "name": "Electric Ball",
-                    "text": "",
-                    "damage": "100",
-                    "convertedEnergyCost": 4
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fairy",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-65",
-            "name": "Spearow",
-            "nationalPokedexNumber": 21,
-            "imageUrl": "https://images.pokemontcg.io/xy6/65.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/65_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "65",
-            "artist": "Masakazu Fukuda",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Peck",
-                    "text": "",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-67",
-            "name": "Meowth",
-            "nationalPokedexNumber": 52,
-            "imageUrl": "https://images.pokemontcg.io/xy6/67.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/67_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "67",
-            "artist": "Akira Komayama",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Feelin' Fine",
-                    "text": "Draw a card.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Fury Swipes",
-                    "text": "Flip 3 coins. This attack does 20 damage times the number of heads.",
-                    "damage": "20×",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fighting",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy6-69",
-            "name": "Skarmory",
-            "nationalPokedexNumber": 227,
-            "imageUrl": "https://images.pokemontcg.io/xy6/69.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/69_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "100",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "69",
-            "artist": "Hitoshi Ariga",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Call for Family",
-                    "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Blow Through",
-                    "text": "If there is any Stadium card in play, this attack does 30 more damage.",
-                    "damage": "30+",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-70",
-            "name": "Taillow",
-            "nationalPokedexNumber": 276,
-            "imageUrl": "https://images.pokemontcg.io/xy6/70.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/70_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "70",
-            "artist": "Atsuko Nishida",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Double Peck",
-                    "text": "Flip 2 coins. This attack does 10 damage times the number of heads.",
-                    "damage": "10×",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-73",
-            "name": "Swablu",
-            "nationalPokedexNumber": 333,
-            "imageUrl": "https://images.pokemontcg.io/xy6/73.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/73_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "73",
-            "artist": "Mizue",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Bind Wound",
-                    "text": "Heal 20 damage from 1 of your Pokémon.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-78",
-            "name": "Pidove",
-            "nationalPokedexNumber": 519,
-            "imageUrl": "https://images.pokemontcg.io/xy6/78.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/78_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "60",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "78",
-            "artist": "kirisAki",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Homing Pidove",
-                    "text": "Look at the top card of your deck. Then, you may shuffle your deck.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Colorless",
-                        "Colorless"
-                    ],
-                    "name": "Gust",
-                    "text": "",
-                    "damage": "20",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
-        },
-        {
-            "id": "xy6-82",
-            "name": "Fletchling",
-            "nationalPokedexNumber": 661,
-            "imageUrl": "https://images.pokemontcg.io/xy6/82.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy6/82_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "82",
-            "artist": "Kanako Eo",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Roaring Skies",
-            "setCode": "xy6",
-            "types": [
-                "Colorless"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "Acrobatics",
-                    "text": "Flip 2 coins. This attack does 10 more damage for each heads.",
-                    "damage": "10+",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Lightning",
-                    "value": "×2"
-                }
-            ],
-            "resistances": [
-                {
-                    "type": "Fighting",
-                    "value": "-20"
-                }
-            ]
+          "name": "Ram",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
         }
-    ]
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Common",
+      "flavorText": "Even though it appears to be eggs of some sort, it was discovered to be a life-form more like plant seeds.",
+      "nationalPokedexNumbers": [
+        102
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/1.png",
+        "large": "https://images.pokemontcg.io/xy6/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "normal": {
+            "low": 0.05,
+            "mid": 0.2,
+            "high": 1.2,
+            "market": 0.12,
+            "directLow": 0.07
+          },
+          "reverseHolofoil": {
+            "low": 0.07,
+            "mid": 0.32,
+            "high": 1.95,
+            "market": 0.22,
+            "directLow": 0.07
+          }
+        }
+      }
+    },
+    {
+      "id": "xy6-3",
+      "name": "Wurmple",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Silcoon",
+        "Cascoon"
+      ],
+      "attacks": [
+        {
+          "name": "Flock",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for Wurmple and put it onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "3",
+      "artist": "Naoyo Kimura",
+      "rarity": "Common",
+      "flavorText": "It lives among the tall grass and in forests. It repels attacks by raising up the spikes on its rear.",
+      "nationalPokedexNumbers": [
+        265
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/3.png",
+        "large": "https://images.pokemontcg.io/xy6/3_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-3",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "normal": {
+            "low": 0.04,
+            "mid": 0.2,
+            "high": 0.99,
+            "market": 0.07,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 0.09,
+            "mid": 0.3,
+            "high": 1.95,
+            "market": 0.23,
+            "directLow": 0.15
+          }
+        }
+      }
+    },
+    {
+      "id": "xy6-9",
+      "name": "Nincada",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Ninjask"
+      ],
+      "attacks": [
+        {
+          "name": "Slight Intrusion",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "9",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Common",
+      "flavorText": "It can sometimes live underground for more than 10 years. It absorbs nutrients from the roots of trees.",
+      "nationalPokedexNumbers": [
+        290
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/9.png",
+        "large": "https://images.pokemontcg.io/xy6/9_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-9",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "normal": {
+            "low": 0.02,
+            "mid": 0.2,
+            "high": 0.99,
+            "market": 0.08,
+            "directLow": 0.06
+          },
+          "reverseHolofoil": {
+            "low": 0.09,
+            "mid": 0.3,
+            "high": 1.95,
+            "market": 0.24,
+            "directLow": 0.09
+          }
+        }
+      }
+    },
+    {
+      "id": "xy6-12",
+      "name": "Tropius",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "110",
+      "types": [
+        "Grass"
+      ],
+      "attacks": [
+        {
+          "name": "Stomp",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        },
+        {
+          "name": "Solar Beam",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "12",
+      "artist": "Kyoko Umemoto",
+      "rarity": "Uncommon",
+      "flavorText": "The bunch of fruit around its neck ripens twice a year and is delicious. It's a highly favored tropical snack.",
+      "nationalPokedexNumbers": [
+        357
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/12.png",
+        "large": "https://images.pokemontcg.io/xy6/12_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-12",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "normal": {
+            "low": 0.05,
+            "mid": 0.25,
+            "high": 0.99,
+            "market": 0.09,
+            "directLow": 0.06
+          },
+          "reverseHolofoil": {
+            "low": 0.14,
+            "mid": 0.32,
+            "high": 1.95,
+            "market": 0.21,
+            "directLow": 0.21
+          }
+        }
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 250,
+  "count": 4,
+  "totalCount": 4
 }

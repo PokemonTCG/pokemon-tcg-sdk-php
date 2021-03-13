@@ -1,104 +1,311 @@
 {
-    "sets": [
-        {
-            "code": "bwp",
-            "ptcgoCode": "PR",
-            "name": "BW Black Star Promos",
-            "series": "Black & White",
-            "totalCards": 101,
-            "standardLegal": true,
-            "releaseDate": "03/01/2011",
-            "symbolUrl": "https://images.pokemontcg.io/bwp/symbol.png"
-        },
-        {
-            "code": "xy5",
-            "ptcgoCode": "PRC",
-            "name": "Primal Clash",
-            "series": "XY",
-            "totalCards": 160,
-            "standardLegal": true,
-            "releaseDate": "02/04/2015",
-            "symbolUrl": "https://images.pokemontcg.io/xy5/symbol.png"
-        },
-        {
-            "code": "dc1",
-            "ptcgoCode": "DCR",
-            "name": "Double Crisis",
-            "series": "XY",
-            "totalCards": 34,
-            "standardLegal": true,
-            "releaseDate": "03/25/2015",
-            "symbolUrl": "https://images.pokemontcg.io/dc1/symbol.png"
-        },
-        {
-            "code": "xy6",
-            "ptcgoCode": "ROS",
-            "name": "Roaring Skies",
-            "series": "XY",
-            "totalCards": 108,
-            "standardLegal": true,
-            "releaseDate": "05/06/2015",
-            "symbolUrl": "https://images.pokemontcg.io/xy6/symbol.png"
-        },
-        {
-            "code": "xy7",
-            "ptcgoCode": "AOR",
-            "name": "Ancient Origins",
-            "series": "XY",
-            "totalCards": 98,
-            "standardLegal": true,
-            "releaseDate": "08/12/2015",
-            "symbolUrl": "https://images.pokemontcg.io/xy7/symbol.png"
-        },
-        {
-            "code": "xy8",
-            "ptcgoCode": "BKT",
-            "name": "BREAKthrough",
-            "series": "XY",
-            "totalCards": 162,
-            "standardLegal": true,
-            "releaseDate": "11/04/2015",
-            "symbolUrl": "https://images.pokemontcg.io/xy8/symbol.png"
-        },
-        {
-            "code": "xy9",
-            "ptcgoCode": "BKP",
-            "name": "BREAKpoint",
-            "series": "XY",
-            "totalCards": 123,
-            "standardLegal": true,
-            "releaseDate": "02/03/2016",
-            "symbolUrl": "https://images.pokemontcg.io/xy9/symbol.png"
-        },
-        {
-            "code": "g1",
-            "ptcgoCode": "GEN",
-            "name": "Generations",
-            "series": "XY",
-            "totalCards": 115,
-            "standardLegal": true,
-            "releaseDate": "02/22/2016",
-            "symbolUrl": "https://images.pokemontcg.io/g1/symbol.png"
-        },
-        {
-            "code": "xy10",
-            "ptcgoCode": "FCO",
-            "name": "Fates Collide",
-            "series": "XY",
-            "totalCards": 124,
-            "standardLegal": true,
-            "releaseDate": "05/02/2016",
-            "symbolUrl": "https://images.pokemontcg.io/xy10/symbol.png"
-        },
-        {
-            "code": "xy11",
-            "ptcgoCode": "STS",
-            "name": "Steam Siege",
-            "series": "XY",
-            "totalCards": 114,
-            "standardLegal": true,
-            "releaseDate": "08/03/2016",
-            "symbolUrl": "https://images.pokemontcg.io/xy11/symbol.png"
-        }
-    ]
+  "data": [
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "series": "Sun & Moon",
+      "printedTotal": 156,
+      "total": 156,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "PR-SM",
+      "releaseDate": "2017/02/03",
+      "updatedAt": "2020/05/01 16:06:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/smp/symbol.png",
+        "logo": "https://images.pokemontcg.io/smp/logo.png"
+      }
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "series": "Sun & Moon",
+      "printedTotal": 181,
+      "total": 196,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "TEU",
+      "releaseDate": "2019/02/01",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sm9/symbol.png",
+        "logo": "https://images.pokemontcg.io/sm9/logo.png"
+      }
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "series": "Sun & Moon",
+      "printedTotal": 18,
+      "total": 18,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "DET",
+      "releaseDate": "2019/04/05",
+      "updatedAt": "2019/04/25 22:26:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/det1/symbol.png",
+        "logo": "https://images.pokemontcg.io/det1/logo.png"
+      }
+    },
+    {
+      "id": "sm10",
+      "name": "Unbroken Bonds",
+      "series": "Sun & Moon",
+      "printedTotal": 214,
+      "total": 234,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "UNB",
+      "releaseDate": "2019/05/03",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sm10/symbol.png",
+        "logo": "https://images.pokemontcg.io/sm10/logo.png"
+      }
+    },
+    {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "series": "Sun & Moon",
+      "printedTotal": 236,
+      "total": 258,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "UNM",
+      "releaseDate": "2019/08/02",
+      "updatedAt": "2020/09/25 10:09:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sm11/symbol.png",
+        "logo": "https://images.pokemontcg.io/sm11/logo.png"
+      }
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "series": "Sun & Moon",
+      "printedTotal": 68,
+      "total": 69,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "HIF",
+      "releaseDate": "2019/08/23",
+      "updatedAt": "2019/08/23 15:59:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sm115/symbol.png",
+        "logo": "https://images.pokemontcg.io/sm115/logo.png"
+      }
+    },
+    {
+      "id": "sma",
+      "name": "Shiny Vault",
+      "series": "Sun & Moon",
+      "printedTotal": 94,
+      "total": 94,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "releaseDate": "2019/08/23",
+      "updatedAt": "2020/05/01 16:06:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+        "logo": "https://images.pokemontcg.io/sma/logo.png"
+      }
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "series": "Sun & Moon",
+      "printedTotal": 236,
+      "total": 271,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "CEC",
+      "releaseDate": "2019/11/01",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/sm12/symbol.png",
+        "logo": "https://images.pokemontcg.io/sm12/logo.png"
+      }
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "series": "Sword & Shield",
+      "printedTotal": 74,
+      "total": 74,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "PR-SW",
+      "releaseDate": "2019/11/15",
+      "updatedAt": "2020/11/15 10:00:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swshp/symbol.png",
+        "logo": "https://images.pokemontcg.io/swshp/logo.png"
+      }
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "series": "Sword & Shield",
+      "printedTotal": 202,
+      "total": 216,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "SSH",
+      "releaseDate": "2020/02/07",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh1/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh1/logo.png"
+      }
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "series": "Sword & Shield",
+      "printedTotal": 192,
+      "total": 209,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "RCL",
+      "releaseDate": "2020/05/01",
+      "updatedAt": "2020/09/25 10:09:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh2/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh2/logo.png"
+      }
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "series": "Sword & Shield",
+      "printedTotal": 189,
+      "total": 201,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "DAA",
+      "releaseDate": "2020/08/14",
+      "updatedAt": "2020/10/25 13:45:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh3/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh3/logo.png"
+      }
+    },
+    {
+      "id": "swsh35",
+      "name": "Champion's Path",
+      "series": "Sword & Shield",
+      "printedTotal": 73,
+      "total": 80,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "CPA",
+      "releaseDate": "2020/09/25",
+      "updatedAt": "2020/10/25 13:45:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh35/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh35/logo.png"
+      }
+    },
+    {
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "series": "Sword & Shield",
+      "printedTotal": 185,
+      "total": 203,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "VIV",
+      "releaseDate": "2020/11/13",
+      "updatedAt": "2020/11/13 16:20:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh4/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh4/logo.png"
+      }
+    },
+    {
+      "id": "swsh45",
+      "name": "Shining Fates",
+      "series": "Sword & Shield",
+      "printedTotal": 72,
+      "total": 73,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "SHF",
+      "releaseDate": "2021/02/19",
+      "updatedAt": "2021/02/24 16:17:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh45/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh45/logo.png"
+      }
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shiny Vault",
+      "series": "Sword & Shield",
+      "printedTotal": 122,
+      "total": 122,
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "SHF",
+      "releaseDate": "2021/02/19",
+      "updatedAt": "2021/02/24 16:17:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
+        "logo": "https://images.pokemontcg.io/swsh45sv/logo.png"
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 250,
+  "count": 16,
+  "totalCount": 16
 }

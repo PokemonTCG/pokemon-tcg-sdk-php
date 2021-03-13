@@ -11,6 +11,12 @@ This is the PokÃ©mon TCG SDK PHP implementation. It is a wrapper around the PokÃ
     composer require pokemon-tcg/pokemon-tcg-sdk-php
     
 ## Usage
+    
+#### Set ApiKey and options
+[See the Guzzle 7 documentation for available options.](https://docs.guzzlephp.org/en/stable/request-options.html)
+    
+    Pokemon::Options(['verify' => true]);
+    Pokemon::ApiKey('<YOUR_API_KEY_HERE>');
 
 #### Find a Card by id
 
@@ -18,22 +24,28 @@ This is the PokÃ©mon TCG SDK PHP implementation. It is a wrapper around the PokÃ
     
 #### Filter Cards via query parameters
 
-    $cards = Pokemon::Card()->where(['set' => 'generations'])->where(['supertype' => 'pokemon'])->all();
+    $cards = Pokemon::Card()->where(['set.name' => 'generations'])->where(['supertype' => 'pokemon'])->all();
+    
     $cards = Pokemon::Card()->where([
-        'set'     => 'roaring skies',
-        'subtype' => 'ex'
+        'set.name' => 'roaring skies',
+        'subtypes' => 'ex'
     ])->all();
     
-#### Find all Cards
+#### Get all Cards
 
     $cards = Pokemon::Card()->all();
     
 #### Paginate Card queries
 
     $cards = Pokemon::Card()->where([
-        'page'     => 5,
-        'pageSize' => 100
-    ])->all();
+        'set.legalities.standard' => 'legal'
+    ])->page(8)->pageSize(100)->all();
+    
+#### Get Card pagination information
+
+    $pagination = Pokemon::Card()->where([
+        'set.legalities.standard' => 'legal'
+    ])->pagination();
     
 #### Find a Set by set code
 
@@ -41,7 +53,15 @@ This is the PokÃ©mon TCG SDK PHP implementation. It is a wrapper around the PokÃ
     
 #### Filter Sets via query parameters
 
-    $set = Pokemon::Set()->where(['standardLegal' => 'true'])->all();
+    $set = Pokemon::Set()->where(['legalities.standard' => 'legal'])->all();
+    
+#### Paginate Set queries
+
+    $set = Pokemon::Set()->page(2)->pageSize(10)->all();
+    
+#### Get Set pagination information
+
+    $pagination = Pokemon::Set()->pagination();
     
 #### Get all Sets
 
@@ -59,83 +79,7 @@ This is the PokÃ©mon TCG SDK PHP implementation. It is a wrapper around the PokÃ
 
     $supertypes = Pokemon::Supertype()->all();
     
-## Models
+#### Get all Rarities
 
-#### Card
-
-| Parameter | Type |
-| --------- | ---- |
-| id | string |
-| name | string |
-| nationalPokedexNumber | int |
-| imageUrl | string |
-| imageUrlHiRes | string |
-| subtype | string |
-| supertype | string |
-| ability | Ability |
-| ancientTrait | AncientTrait |
-| hp | string |
-| number | string |
-| artist | string |
-| rarity | string |
-| series | string |
-| set | string |
-| setCode | string |
-| retreatCost | array |
-| text | array |
-| types | array |
-| attacks | array |
-| weakness | array |
-| resistance | array |
-
-#### Set
-
-| Parameter | Type |
-| --------- | ---- |
-| code | string |
-| ptcgoCode | string |
-| name | string |
-| series | string |
-| totalCards | int |
-| standardLegal | boolean |
-| releaseDate | string |
-| symbolUrl | string |
-
-#### Ability
-
-| Parameter | Type |
-| --------- | ---- |
-| name | string |
-| text | string |
-| type | string |
-
-#### AncientTrait
-
-| Parameter | Type |
-| --------- | ---- |
-| name | string |
-| text | string |
-
-#### Attack
-
-| Parameter | Type |
-| --------- | ---- |
-| cost | array |
-| name | string |
-| text | string |
-| damage | string |
-| convertedEnergyCost | int |
-
-#### Resistance
-
-| Parameter | Type |
-| --------- | ---- |
-| type | string |
-| value | string |
-
-#### Weakness
-
-| Parameter | Type |
-| --------- | ---- |
-| type | string |
-| value | string |
+    $supertypes = Pokemon::Rarity()->all();
+    
