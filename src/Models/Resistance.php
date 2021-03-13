@@ -23,15 +23,15 @@ class Resistance extends Model
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
-        return (string)$this->type;
+        return $this->type;
     }
 
     /**
      * @param string $type
      */
-    public function setType($type)
+    public function setType(string $type)
     {
         $this->type = $type;
     }
@@ -39,15 +39,15 @@ class Resistance extends Model
     /**
      * @return string
      */
-    public function getValue()
+    public function getValue(): string
     {
-        return (string)$this->value;
+        return $this->value;
     }
 
     /**
      * @param string $value
      */
-    public function setValue($value)
+    public function setValue(string $value)
     {
         $this->value = $value;
     }

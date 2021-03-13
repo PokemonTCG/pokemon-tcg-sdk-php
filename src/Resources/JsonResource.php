@@ -2,7 +2,10 @@
 
 namespace Pokemon\Resources;
 
+use Doctrine\Inflector\Inflector;
+use Doctrine\Inflector\InflectorFactory;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
 use Pokemon\Pokemon;
 use Pokemon\Resources\Interfaces\ResourceInterface;
@@ -30,30 +33,44 @@ class JsonResource implements ResourceInterface
     /**
      * @var string
      */
-    protected $uri;
+    protected $resource;
+
+    /**
+     * @var Inflector
+     */
+    protected $inflector;
 
     /**
      * Request constructor.
      *
-     * @param string $uri
-     * @param array  $options
+     * @param string $resource
+     * @param array $options
+     * @param string|null $apiKey
      */
-    public function __construct($uri, array $options = [])
+    public function __construct($resource, array $options = [], ?string $apiKey = null)
     {
         $defaults = [
             'base_uri' => Pokemon::API_URL,
-            'verify'   => false,
+            'verify' => false,
         ];
-        $this->uri = $uri;
+
+        if (!empty($apiKey)) {
+            $defaults['headers'] = [
+                'X-Api-Key' => $apiKey,
+            ];
+        }
+
+        $this->resource = $resource;
         $this->client = new Client(array_merge($defaults, $options));
+        $this->inflector = InflectorFactory::create()->build();
     }
 
     /**
      * @return Request
      */
-    protected function prepare()
+    protected function prepare(): Request
     {
-        return new Request($this->method, $this->uri);
+        return new Request($this->method, $this->resource);
     }
 
     /**
@@ -61,50 +78,29 @@ class JsonResource implements ResourceInterface
      *
      * @return mixed
      */
-    protected function getResponseData(ResponseInterface $response)
+    protected function getResponseData(ResponseInterface $response): mixed
     {
         return json_decode($response->getBody()->getContents());
     }
 
     /**
-     * @param stdClass $data
+     * @param stdClass $response
      *
      * @return array
      */
-    protected function transformAll(stdClass $data)
+    protected function transformAll(stdClass $response): array
     {
-        return $this->getFirstProperty($data);
-    }
-
-    /**
-     * @param stdClass $data
-     *
-     * @return string|null
-     */
-    protected function getFirstPropertyName(stdClass $data)
-    {
-        $attributes = get_object_vars($data);
-
-        return (count($attributes) > 0) ? array_keys($attributes)[0] : null;
-    }
-
-    /**
-     * @param stdClass $data
-     *
-     * @return mixed
-     */
-    protected function getFirstProperty(stdClass $data)
-    {
-        return $data->{$this->getFirstPropertyName($data)};
+        return $response->data;
     }
 
     /**
      * @return array
+     * @throws GuzzleException
      */
-    public function all()
+    public function all(): array
     {
-        $data = $this->getResponseData($this->client->send($this->prepare()));
+        $response = $this->getResponseData($this->client->send($this->prepare()));
 
-        return $this->transformAll($data);
+        return $this->transformAll($response);
     }
 }

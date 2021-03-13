@@ -1,54 +1,96 @@
 {
-    "card": {
-        "id": "xy7-57",
-        "name": "Giratina-EX",
-        "nationalPokedexNumber": 487,
-        "imageUrl": "https://images.pokemontcg.io/xy7/54.png",
-        "imageUrlHiRes": "https://images.pokemontcg.io/xy7/54_hires.png",
-        "subtype": "EX",
-        "supertype": "Pokémon",
-        "ability": {
-            "name": "Renegade Pulse",
-            "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Mega Evolution Pokémon.",
-            "type": "Ability"
-        },
-        "hp": "170",
-        "retreatCost": [
-            "Colorless",
-            "Colorless",
-            "Colorless"
+  "data": {
+    "id": "xy7-57",
+    "name": "Giratina-EX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "EX"
+    ],
+    "hp": "170",
+    "types": [
+      "Dragon"
+    ],
+    "rules": [
+      "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "abilities": [
+      {
+        "name": "Renegade Pulse",
+        "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Mega Evolution Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Chaos Wheel",
+        "cost": [
+          "Grass",
+          "Psychic",
+          "Colorless",
+          "Colorless"
         ],
-        "number": "57",
-        "artist": "PLANETA",
-        "rarity": "Rare Holo EX",
-        "series": "XY",
-        "set": "Ancient Origins",
-        "setCode": "xy7",
-        "text": [
-            "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-        ],
-        "types": [
-            "Dragon"
-        ],
-        "attacks": [
-            {
-                "cost": [
-                    "Grass",
-                    "Psychic",
-                    "Colorless",
-                    "Colorless"
-                ],
-                "name": "Chaos Wheel",
-                "text": "Your opponent can't play any Pokémon Tool, Special Energy, or Stadium cards from his or her hand during his or her next turn.",
-                "damage": "100",
-                "convertedEnergyCost": 4
-            }
-        ],
-        "weaknesses": [
-            {
-                "type": "Fairy",
-                "value": "×2"
-            }
-        ]
+        "convertedEnergyCost": 4,
+        "damage": "100",
+        "text": "Your opponent can't play any Pokémon Tool, Special Energy, or Stadium cards from his or her hand during his or her next turn."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fairy",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 3,
+    "set": {
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "series": "XY",
+      "printedTotal": 98,
+      "total": 100,
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "ptcgoCode": "AOR",
+      "releaseDate": "2015/08/12",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+        "logo": "https://images.pokemontcg.io/xy7/logo.png"
+      }
+    },
+    "number": "57",
+    "artist": "PLANETA",
+    "rarity": "Rare Holo EX",
+    "nationalPokedexNumbers": [
+      487
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/xy7/57.png",
+      "large": "https://images.pokemontcg.io/xy7/57_hires.png"
+    },
+    "tcgplayer": {
+      "url": "https://prices.pokemontcg.io/tcgplayer/xy7-57",
+      "updatedAt": "2021/03/12",
+      "prices": {
+        "holofoil": {
+          "low": 3.7,
+          "mid": 8.0,
+          "high": 14.9,
+          "market": 6.0,
+          "directLow": 9.99
+        }
+      }
     }
+  }
 }

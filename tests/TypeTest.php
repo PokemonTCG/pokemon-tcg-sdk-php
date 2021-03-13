@@ -1,18 +1,20 @@
 <?php
 
+use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 use GuzzleHttp\Psr7\Response;
 use Pokemon\Pokemon;
 
 /**
- * Class TypesTest
+ * Class TypeTest
  */
 class TypeTest extends TestCase
 {
+    use ArraySubsetAsserts;
 
     /**
      * @return string
      */
-    protected function fixtureDirectory()
+    protected function fixtureDirectory(): string
     {
         return 'types';
     }
@@ -20,7 +22,7 @@ class TypeTest extends TestCase
     /**
      * Run before tests
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -32,11 +34,12 @@ class TypeTest extends TestCase
     /**
      * Get all types
      */
-    public function testAllReturnsAllTypes()
+    public function testAllReturnsAllTypes(): void
     {
-        $types = Pokemon::Type($this->clientOptions)->all();
+        Pokemon::Options($this->clientOptions);
+        $types = Pokemon::Type()->all();
 
-        $this->assertEquals(12, count($types));
-        $this->assertArraySubset(['Colorless', 'Dark'], $types);
+        $this->assertEquals(11, count($types));
+        $this->assertArraySubset(['Colorless', 'Darkness', 'Dragon', 'Fairy'], $types);
     }
 }

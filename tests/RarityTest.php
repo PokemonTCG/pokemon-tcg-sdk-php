@@ -1,20 +1,22 @@
 <?php
 
+use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 use GuzzleHttp\Psr7\Response;
 use Pokemon\Pokemon;
 
 /**
- * Class SubtypeTest
+ * Class RarityTest
  */
-class SupertypeTest extends TestCase
+class RarityTest extends TestCase
 {
+    use ArraySubsetAsserts;
 
     /**
      * @return string
      */
     protected function fixtureDirectory(): string
     {
-        return 'supertypes';
+        return 'rarities';
     }
 
     /**
@@ -30,14 +32,14 @@ class SupertypeTest extends TestCase
     }
 
     /**
-     * Get all supertypes
+     * Get all types
      */
-    public function testAllReturnsAllSupertypes(): void
+    public function testAllReturnsAllTypes(): void
     {
         Pokemon::Options($this->clientOptions);
-        $supertypes = Pokemon::Supertype()->all();
+        $rarities = Pokemon::Rarity()->all();
 
-        $this->assertEquals(3, count($supertypes));
-        $this->assertEquals(['Energy', 'Pokémon', 'Trainer'], $supertypes);
+        $this->assertEquals(23, count($rarities));
+        $this->assertArraySubset(['Amazing Rare', 'Common', 'LEGEND', 'Promo'], $rarities);
     }
 }

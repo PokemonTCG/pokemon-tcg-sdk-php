@@ -23,15 +23,15 @@ class AncientTrait extends Model
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
-        return (string)$this->name;
+        return $this->name;
     }
 
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -39,15 +39,15 @@ class AncientTrait extends Model
     /**
      * @return string
      */
-    public function getText()
+    public function getText(): string
     {
-        return (string)$this->text;
+        return $this->text;
     }
 
     /**
      * @param string $text
      */
-    public function setText($text)
+    public function setText(string $text)
     {
         $this->text = $text;
     }

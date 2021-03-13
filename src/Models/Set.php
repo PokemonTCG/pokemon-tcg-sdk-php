@@ -13,12 +13,7 @@ class Set extends Model
     /**
      * @var string
      */
-    private $code;
-
-    /**
-     * @var string
-     */
-    private $ptcgoCode;
+    private $id;
 
     /**
      * @var string
@@ -33,77 +28,66 @@ class Set extends Model
     /**
      * @var int
      */
-    private $totalCards;
+    private $printedTotal;
 
     /**
-     * @var boolean
+     * @var int
      */
-    private $standardLegal;
+    private $total;
 
     /**
-     * @var boolean
+     * @var Legalities|null
      */
-    private $expandedLegal;
+    private $legalities;
 
     /**
-     * @var string
+     * @var string|null
+     */
+    private $ptcgoCode;
+
+    /**
+     * @var string|null
      */
     private $releaseDate;
 
     /**
-     * @var string
+     * @var string|null
      */
-    private $symbolUrl;
+    private $updatedAt;
 
     /**
-     * @var string
+     * @var SetImages|null
      */
-    private $logoUrl;
-
-    /**
-     * @return string
-     */
-    public function getCode()
-    {
-        return (string)$this->code;
-    }
-
-    /**
-     * @param string $code
-     */
-    public function setCode($code)
-    {
-        $this->code = $code;
-    }
+    private $images;
 
     /**
      * @return string
      */
-    public function getPtcgoCode()
+    public function getId(): string
     {
-        return (string)$this->ptcgoCode;
+        return $this->id;
     }
 
     /**
-     * @param string $ptcgoCode
+     * @param string $id
      */
-    public function setPtcgoCode($ptcgoCode)
+    public function setId(string $id)
     {
-        $this->ptcgoCode = $ptcgoCode;
+        $this->id = $id;
     }
 
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
-        return (string)$this->name;
+        return $this->name;
     }
 
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -111,15 +95,15 @@ class Set extends Model
     /**
      * @return string
      */
-    public function getSeries()
+    public function getSeries(): string
     {
-        return (string)$this->series;
+        return $this->series;
     }
 
     /**
      * @param string $series
      */
-    public function setSeries($series)
+    public function setSeries(string $series)
     {
         $this->series = $series;
     }
@@ -127,97 +111,113 @@ class Set extends Model
     /**
      * @return int
      */
-    public function getTotalCards()
+    public function getPrintedTotal(): int
     {
-        return (int)$this->totalCards;
+        return $this->printedTotal;
     }
 
     /**
-     * @param int $totalCards
+     * @param int $printedTotal
      */
-    public function setTotalCards($totalCards)
+    public function setPrintedTotal(int $printedTotal)
     {
-        $this->totalCards = $totalCards;
+        $this->printedTotal = $printedTotal;
     }
 
     /**
-     * @return boolean
+     * @return int
      */
-    public function isStandardLegal()
+    public function getTotal(): int
     {
-        return (boolean)$this->standardLegal;
+        return $this->total;
     }
 
     /**
-     * @param boolean $standardLegal
+     * @param int $total
      */
-    public function setStandardLegal($standardLegal)
+    public function setTotal(int $total)
     {
-        $this->standardLegal = $standardLegal;
+        $this->total = $total;
     }
 
     /**
-     * @return boolean
+     * @return Legalities|null
      */
-    public function isExpandedLegal()
+    public function getLegalities(): ?Legalities
     {
-        return (boolean)$this->expandedLegal;
+        return $this->legalities;
     }
 
     /**
-     * @param boolean $expandedLegal
+     * @param Legalities|null $legalities
      */
-    public function setExpandedLegal($expandedLegal)
+    public function setLegalities(?Legalities $legalities)
     {
-        $this->expandedLegal = $expandedLegal;
+        $this->legalities = $legalities;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getReleaseDate()
+    public function getPtcgoCode(): ?string
     {
-        return (string)$this->releaseDate;
+        return $this->ptcgoCode;
     }
 
     /**
-     * @param string $releaseDate
+     * @param string|null $ptcgoCode
      */
-    public function setReleaseDate($releaseDate)
+    public function setPtcgoCode(?string $ptcgoCode)
+    {
+        $this->ptcgoCode = $ptcgoCode;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getReleaseDate(): ?string
+    {
+        return $this->releaseDate;
+    }
+
+    /**
+     * @param string|null $releaseDate
+     */
+    public function setReleaseDate(?string $releaseDate)
     {
         $this->releaseDate = $releaseDate;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSymbolUrl()
+    public function getUpdatedAt(): ?string
     {
-        return (string)$this->symbolUrl;
+        return $this->updatedAt;
     }
 
     /**
-     * @param string $symbolUrl
+     * @param string|null $updatedAt
      */
-    public function setSymbolUrl($symbolUrl)
+    public function setUpdatedAt(?string $updatedAt)
     {
-        $this->symbolUrl = $symbolUrl;
+        $this->updatedAt = $updatedAt;
     }
 
     /**
-     * @return string
+     * @return SetImages|null
      */
-    public function getLogoUrl()
+    public function getImages(): ?SetImages
     {
-        return (string)$this->logoUrl;
+        return $this->images;
     }
 
     /**
-     * @param string $logoUrl
+     * @param SetImages|null $images
      */
-    public function setLogoUrl($logoUrl)
+    public function setImages(?SetImages $images)
     {
-        $this->logoUrl = $logoUrl;
+        $this->images = $images;
     }
 
 }

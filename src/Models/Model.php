@@ -2,8 +2,9 @@
 
 namespace Pokemon\Models;
 
-use Doctrine\Common\Inflector\Inflector;
+use Doctrine\Inflector\InflectorFactory;
 use ReflectionClass;
+use ReflectionException;
 use ReflectionProperty;
 use stdClass;
 
@@ -32,6 +33,7 @@ class Model
 
     /**
      * @return array
+     * @throws ReflectionException
      */
     public function getAttributes()
     {
@@ -58,7 +60,15 @@ class Model
                 $value = $this->parse($attribute, $value);
             }
 
-            $method = 'set' . ucfirst($attribute);
+            switch ($attribute) {
+                case '1stEditionNormal':
+                    $method = 'setFirstEditionNormal';
+                    break;
+
+                default:
+                    $method = 'set' . ucfirst($attribute);
+            }
+
             if (isset($this->methods[$method])) {
                 $this->{$method}($value);
             }
@@ -67,14 +77,36 @@ class Model
 
     /**
      * @param string $attribute
-     * @param mixed  $value
+     * @param mixed $value
      *
      * @return mixed|Model
      */
     protected function parse($attribute, $value)
     {
+        $inflector = InflectorFactory::create()->build();
+
         if (is_object($value)) {
-            $class = '\\Pokemon\\Models\\' . ucfirst(Inflector::singularize($attribute));
+            switch ($attribute) {
+                case 'images':
+                    $class = get_class($this) . 'Images';
+                    break;
+
+                case 'legalities':
+                    $class = '\\Pokemon\\Models\\Legalities';
+                    break;
+
+                case 'prices':
+                    $class = '\\Pokemon\\Models\\Prices';
+                    break;
+
+                case 'tcgplayer':
+                    $class = '\\Pokemon\\Models\\TCGPlayer';
+                    break;
+
+                default:
+                    $class = '\\Pokemon\\Models\\' . ucfirst($inflector->singularize($attribute));
+            }
+
             if (class_exists($class)) {
                 /** @var Model $model */
                 $model = new $class;
@@ -88,6 +120,7 @@ class Model
 
     /**
      * @return array
+     * @throws ReflectionException
      */
     public function toArray()
     {
@@ -117,6 +150,7 @@ class Model
      * @param mixed $value
      *
      * @return mixed
+     * @throws ReflectionException
      */
     protected function valueToArray($value)
     {
@@ -129,6 +163,7 @@ class Model
 
     /**
      * @return string
+     * @throws ReflectionException
      */
     public function toJson()
     {

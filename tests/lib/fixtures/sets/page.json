@@ -1,104 +1,178 @@
 {
-    "sets": [
-        {
-            "code": "base1",
-            "ptcgoCode": "BS",
-            "name": "Base",
-            "series": "Base",
-            "totalCards": 102,
-            "standardLegal": false,
-            "releaseDate": "01/09/1999",
-            "symbolUrl": "https://images.pokemontcg.io/base1/symbol.png"
-        },
-        {
-            "code": "base2",
-            "ptcgoCode": "JU",
-            "name": "Jungle",
-            "series": "Base",
-            "totalCards": 64,
-            "standardLegal": false,
-            "releaseDate": "06/16/1999",
-            "symbolUrl":"https://images.pokemontcg.io/base2/symbol.png"
-        },
-        {
-            "code": "base3",
-            "ptcgoCode": "FO",
-            "name": "Fossil",
-            "series": "Base",
-            "totalCards": 62,
-            "standardLegal": false,
-            "releaseDate": "10/10/1999",
-            "symbolUrl": "https://images.pokemontcg.io/base3/symbol.png"
-        },
-        {
-            "code": "base5",
-            "ptcgoCode": "TR",
-            "name": "Team Rocket",
-            "series": "Base",
-            "totalCards": 83,
-            "standardLegal": false,
-            "releaseDate": "04/24/2000",
-            "symbolUrl": "https://images.pokemontcg.io/base5/symbol.png"
-        },
-        {
-            "code": "gym1",
-            "ptcgoCode": "G1",
-            "name": "Gym Heroes",
-            "series": "Gym",
-            "totalCards": 132,
-            "standardLegal": false,
-            "releaseDate": "08/14/2000",
-            "symbolUrl": "https://images.pokemontcg.io/gym1/symbol.png"
-        },
-        {
-            "code": "gym2",
-            "ptcgoCode": "G2",
-            "name": "Gym Challenge",
-            "series": "Gym",
-            "totalCards": 132,
-            "standardLegal": false,
-            "releaseDate": "10/16/2000",
-            "symbolUrl": "https://images.pokemontcg.io/gym2/symbol.png"
-        },
-        {
-            "code": "neo1",
-            "ptcgoCode": "N1",
-            "name": "Neo Genesis",
-            "series": "Neo",
-            "totalCards": 111,
-            "standardLegal": false,
-            "releaseDate": "12/16/2000",
-            "symbolUrl": "https://images.pokemontcg.io/neo1/symbol.png"
-        },
-        {
-            "code": "neo2",
-            "ptcgoCode": "N2",
-            "name": "Neo Discovery",
-            "series": "Neo",
-            "totalCards": 75,
-            "standardLegal": false,
-            "releaseDate": "06/01/2001",
-            "symbolUrl": "https://images.pokemontcg.io/neo2/symbol.png"
-        },
-        {
-            "code": "neo3",
-            "ptcgoCode": "N3",
-            "name": "Neo Revelation",
-            "series": "Neo",
-            "totalCards": 66,
-            "standardLegal": false,
-            "releaseDate": "09/21/2001",
-            "symbolUrl": "https://images.pokemontcg.io/neo3/symbol.png"
-        },
-        {
-            "code": "neo4",
-            "ptcgoCode": "N4",
-            "name": "Neo Destiny",
-            "series": "Neo",
-            "totalCards": 113,
-            "standardLegal": false,
-            "releaseDate": "02/28/2002",
-            "symbolUrl": "https://images.pokemontcg.io/neo4/symbol.png"
-        }
-    ]
+  "data": [
+    {
+      "id": "base1",
+      "name": "Base",
+      "series": "Base",
+      "printedTotal": 102,
+      "total": 102,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "BS",
+      "releaseDate": "1999/01/09",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+        "logo": "https://images.pokemontcg.io/base1/logo.png"
+      }
+    },
+    {
+      "id": "base2",
+      "name": "Jungle",
+      "series": "Base",
+      "printedTotal": 64,
+      "total": 64,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "JU",
+      "releaseDate": "1999/06/16",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base2/symbol.png",
+        "logo": "https://images.pokemontcg.io/base2/logo.png"
+      }
+    },
+    {
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "series": "Base",
+      "printedTotal": 53,
+      "total": 53,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "PR",
+      "releaseDate": "1999/07/01",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/basep/symbol.png",
+        "logo": "https://images.pokemontcg.io/basep/logo.png"
+      }
+    },
+    {
+      "id": "base3",
+      "name": "Fossil",
+      "series": "Base",
+      "printedTotal": 62,
+      "total": 62,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "FO",
+      "releaseDate": "1999/10/10",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base3/symbol.png",
+        "logo": "https://images.pokemontcg.io/base3/logo.png"
+      }
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
+      "series": "Base",
+      "printedTotal": 130,
+      "total": 130,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "B2",
+      "releaseDate": "2000/02/24",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base4/symbol.png",
+        "logo": "https://images.pokemontcg.io/base4/logo.png"
+      }
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
+      "series": "Base",
+      "printedTotal": 83,
+      "total": 83,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "TR",
+      "releaseDate": "2000/04/24",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/base5/symbol.png",
+        "logo": "https://images.pokemontcg.io/base5/logo.png"
+      }
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "series": "Gym",
+      "printedTotal": 132,
+      "total": 132,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "G1",
+      "releaseDate": "2000/08/14",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/gym1/symbol.png",
+        "logo": "https://images.pokemontcg.io/gym1/logo.png"
+      }
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "series": "Gym",
+      "printedTotal": 132,
+      "total": 132,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "G2",
+      "releaseDate": "2000/10/16",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/gym2/symbol.png",
+        "logo": "https://images.pokemontcg.io/gym2/logo.png"
+      }
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "series": "Neo",
+      "printedTotal": 111,
+      "total": 111,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "N1",
+      "releaseDate": "2000/12/16",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/neo1/symbol.png",
+        "logo": "https://images.pokemontcg.io/neo1/logo.png"
+      }
+    },
+    {
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "series": "Neo",
+      "printedTotal": 75,
+      "total": 75,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "N2",
+      "releaseDate": "2001/06/01",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/neo2/symbol.png",
+        "logo": "https://images.pokemontcg.io/neo2/logo.png"
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 10,
+  "count": 10,
+  "totalCount": 121
 }

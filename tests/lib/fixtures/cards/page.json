@@ -1,413 +1,939 @@
 {
-    "cards": [
+  "data": [
+    {
+      "id": "pl1-1",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "57",
+      "hp": "130",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "abilities": [
         {
-            "id": "xy7-1",
-            "name": "Oddish",
-            "nationalPokedexNumber": 43,
-            "imageUrl": "https://images.pokemontcg.io/xy7/1.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/1_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "1",
-            "artist": "MAHOU",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Trip Over",
-                    "text": "Flip a coin. If heads, this attack does 10 more damage.",
-                    "damage": "10+",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-2",
-            "name": "Gloom",
-            "nationalPokedexNumber": 44,
-            "imageUrl": "https://images.pokemontcg.io/xy7/2.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/2_hires.png",
-            "subtype": "Stage 1",
-            "supertype": "Pokémon",
-            "hp": "80",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "2",
-            "artist": "Masakazu Fukuda",
-            "rarity": "Uncommon",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Drool",
-                    "text": "",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-3",
-            "name": "Vileplume",
-            "nationalPokedexNumber": 45,
-            "imageUrl": "https://images.pokemontcg.io/xy7/3.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/3_hires.png",
-            "subtype": "Stage 2",
-            "supertype": "Pokémon",
-            "ability": {
-                "name": "Irritating Pollen",
-                "text": "Each player can't play any Item cards from his or her hand."
-            },
-            "hp": "130",
-            "retreatCost": [
-                "Colorless",
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "3",
-            "artist": "Midori Harada",
-            "rarity": "Rare",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass",
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Solar Beam",
-                    "text": "",
-                    "damage": "70",
-                    "convertedEnergyCost": 3
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-4",
-            "name": "Bellossom",
-            "nationalPokedexNumber": 182,
-            "imageUrl": "https://images.pokemontcg.io/xy7/4.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/4_hires.png",
-            "subtype": "Stage 2",
-            "supertype": "Pokémon",
-            "hp": "120",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "4",
-            "artist": "Mizue",
-            "rarity": "Uncommon",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Windmill",
-                    "text": "Switch this Pokémon with 1 of your Benched Pokémon.",
-                    "damage": "20",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Flower Tornado",
-                    "text": "Move as many Grass Energy attached to your Pokémon to your other Pokémon in any way you like.",
-                    "damage": "60",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-5",
-            "name": "Spinarak",
-            "nationalPokedexNumber": 167,
-            "imageUrl": "https://images.pokemontcg.io/xy7/5.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/5_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "50",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "5",
-            "artist": "Naoyo Kimura",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Colorless"
-                    ],
-                    "name": "String Shot",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
-                    "damage": "",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-6",
-            "name": "Ariados",
-            "nationalPokedexNumber": 168,
-            "imageUrl": "https://images.pokemontcg.io/xy7/6.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/6_hires.png",
-            "subtype": "Stage 1",
-            "supertype": "Pokémon",
-            "ability": {
-                "name": "Poisonous Nest",
-                "text": "Once during your turn (before your attack), you may use this Ability. Both Active Pokémon (except for Grass Pokémon) are now Poisoned."
-            },
-            "hp": "70",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "6",
-            "artist": "Hajime Kusajima",
-            "rarity": "Uncommon",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Impound",
-                    "text": "The Defending Pokémon can't retreat during your opponent's next turn.",
-                    "damage": "30",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-7",
-            "name": "Sceptile-EX",
-            "nationalPokedexNumber": 254,
-            "imageUrl": "https://images.pokemontcg.io/xy7/7.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/7_hires.png",
-            "subtype": "EX",
-            "supertype": "Pokémon",
-            "hp": "170",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "7",
-            "artist": "Eske Yoshinob",
-            "rarity": "Rare Holo EX",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "text": [
-                "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-            ],
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Sleep Poison",
-                    "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep and Poisoned.",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                },
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Unseen Claw",
-                    "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 70 more damage.",
-                    "damage": "60+",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-8",
-            "name": "M Sceptile-EX",
-            "nationalPokedexNumber": 254,
-            "imageUrl": "https://images.pokemontcg.io/xy7/8.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/8_hires.png",
-            "subtype": "MEGA",
-            "supertype": "Pokémon",
-            "hp": "220",
-            "retreatCost": [
-                "Colorless",
-                "Colorless"
-            ],
-            "number": "8",
-            "artist": "5ban Graphics",
-            "rarity": "Rare Holo EX",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "text": [
-                "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
-                "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon.",
-                "When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends."
-            ],
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass",
-                        "Colorless"
-                    ],
-                    "name": "Jagged Saber",
-                    "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pokémon in any way you like. If you attached Energy to a Pokémon in this way, heal all damage from that Pokémon.",
-                    "damage": "100",
-                    "convertedEnergyCost": 2
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "xy7-9",
-            "name": "Combee",
-            "nationalPokedexNumber": 415,
-            "imageUrl": "https://images.pokemontcg.io/xy7/9.png",
-            "imageUrlHiRes": "https://images.pokemontcg.io/xy7/9_hires.png",
-            "subtype": "Basic",
-            "supertype": "Pokémon",
-            "hp": "40",
-            "retreatCost": [
-                "Colorless"
-            ],
-            "number": "9",
-            "artist": "Sumiyoshi Kizuki",
-            "rarity": "Common",
-            "series": "XY",
-            "set": "Ancient Origins",
-            "setCode": "xy7",
-            "types": [
-                "Grass"
-            ],
-            "attacks": [
-                {
-                    "cost": [
-                        "Grass"
-                    ],
-                    "name": "Bug Bite",
-                    "text": "",
-                    "damage": "10",
-                    "convertedEnergyCost": 1
-                }
-            ],
-            "weaknesses": [
-                {
-                    "type": "Fire",
-                    "value": "×2"
-                }
-            ]
-        },
-        {
-            "id": "gym1-132",
-            "name": "Water Energy",
-            "imageUrl": "https://images.pokemontcg.io/gym1/132.jpg",
-            "imageUrlHiRes": "https://images.pokemontcg.io/gym1/132_hires.jpg",
-            "subtype": "Basic",
-            "supertype": "Energy",
-            "number": "132",
-            "artist": "Keiji Kinebuchi",
-            "rarity": "Common",
-            "series": "Gym",
-            "set": "Gym Heroes",
-            "setCode": "gym1"
+          "name": "Damage Bind",
+          "text": "Each Pokémon that has any damage counters on it (both yours and your opponent's) can't use any Poké-Powers.",
+          "type": "Poké-Body"
         }
-    ]
+      ],
+      "attacks": [
+        {
+          "name": "Gigavolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 30 more damage. If tails, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Reflect Energy",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Move an Energy card attached to Ampharos to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+30"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "pl1",
+        "name": "Platinum",
+        "series": "Platinum",
+        "printedTotal": 127,
+        "total": 130,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "PL",
+        "releaseDate": "2009/02/11",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pl1/symbol.png",
+          "logo": "https://images.pokemontcg.io/pl1/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Atsuko Nishida",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pl1/1.png",
+        "large": "https://images.pokemontcg.io/pl1/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pl1-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 5.68,
+            "mid": 7.04,
+            "high": 8.99,
+            "market": 3.56,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 5.58,
+            "mid": 10.29,
+            "high": 15.0,
+            "market": 2.16,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "det1-1",
+      "name": "Bulbasaur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Ivysaur"
+      ],
+      "attacks": [
+        {
+          "name": "Find a Friend",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Grass Pokémon, reveal it, and put it into your hand. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "det1",
+        "name": "Detective Pikachu",
+        "series": "Sun & Moon",
+        "printedTotal": 18,
+        "total": 18,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "DET",
+        "releaseDate": "2019/04/05",
+        "updatedAt": "2019/04/25 22:26:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/det1/symbol.png",
+          "logo": "https://images.pokemontcg.io/det1/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "MPC Film",
+      "rarity": "Common",
+      "flavorText": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+      "nationalPokedexNumbers": [
+        1
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/det1/1.png",
+        "large": "https://images.pokemontcg.io/det1/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/det1-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 0.1,
+            "mid": 0.41,
+            "high": 9.95,
+            "market": 0.31,
+            "directLow": 0.34
+          }
+        }
+      }
+    },
+    {
+      "id": "mcd19-1",
+      "name": "Caterpie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Metapod"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Surprise Attack",
+          "text": "Flip a coin. If tails, this attack does nothing.",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "mcd19",
+        "name": "McDonald's Collection 2019",
+        "series": "Other",
+        "printedTotal": 12,
+        "total": 12,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2019/10/15",
+        "updatedAt": "2020/11/11 13:00:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/mcd19/symbol.png",
+          "logo": "https://images.pokemontcg.io/mcd19/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Sekio",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        10
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/1.png",
+        "large": "https://images.pokemontcg.io/mcd19/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/mcd19-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 12.75,
+            "mid": 12.99,
+            "high": 14.95,
+            "market": 6.14,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "dv1-1",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "40",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "attacks": [
+        {
+          "name": "Wrap",
+          "cost": [
+            "Grass",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "dv1",
+        "name": "Dragon Vault",
+        "series": "Black & White",
+        "printedTotal": 20,
+        "total": 20,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "DRV",
+        "releaseDate": "2012/10/05",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/dv1/symbol.png",
+          "logo": "https://images.pokemontcg.io/dv1/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Rare Holo",
+      "flavorText": "It is called the \"Mirage Pokémon\" because so few have seen it. Its shed skin has been found.",
+      "nationalPokedexNumbers": [
+        147
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/1.png",
+        "large": "https://images.pokemontcg.io/dv1/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/dv1-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 0.45,
+            "mid": 0.9,
+            "high": 3.28,
+            "market": 0.69,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "xy5-1",
+      "name": "Weedle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "Kakuna"
+      ],
+      "attacks": [
+        {
+          "name": "Multiply",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for Weedle and put it onto your Bench. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy5",
+        "name": "Primal Clash",
+        "series": "XY",
+        "printedTotal": 160,
+        "total": 160,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PRC",
+        "releaseDate": "2015/02/04",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy5/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy5/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "flavorText": "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
+      "nationalPokedexNumbers": [
+        13
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy5/1.png",
+        "large": "https://images.pokemontcg.io/xy5/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy5-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "normal": {
+            "low": 0.04,
+            "mid": 0.23,
+            "high": 1.0,
+            "market": 0.1,
+            "directLow": 0.07
+          },
+          "reverseHolofoil": {
+            "low": 0.15,
+            "mid": 0.37,
+            "high": 1.95,
+            "market": 0.2,
+            "directLow": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "ex7-1",
+      "name": "Azumarill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Marill",
+      "abilities": [
+        {
+          "name": "Froth",
+          "text": "Once during your turn, when you play Azumarill from your hand to evolve 1 of your Active Pokémon, you may use this power. Each Defending Pokémon is now Paralyzed.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Water Punch",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin for each Water Energy attached to Azumarill. This attack does 20 damage plus 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex7",
+        "name": "Team Rocket Returns",
+        "series": "EX",
+        "printedTotal": 109,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "TRR",
+        "releaseDate": "2004/11/01",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex7/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex7/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        184
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex7/1.png",
+        "large": "https://images.pokemontcg.io/ex7/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex7-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 1.0,
+            "mid": 3.6,
+            "high": 8.49,
+            "market": 8.33,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 5.44,
+            "mid": 7.02,
+            "high": 8.99,
+            "market": 8.88,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "ecard2-H1",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "100",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Reflect Energy",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "If you have any Benched Pokémon and if there are any basic Energy cards attached to Ampharos, take 1 of those Energy cards and attach it to 1 of those Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "ecard2",
+        "name": "Aquapolis",
+        "series": "E-Card",
+        "printedTotal": 186,
+        "total": 186,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "AQ",
+        "releaseDate": "2003/01/15",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ecard2/symbol.png",
+          "logo": "https://images.pokemontcg.io/ecard2/logo.png"
+        }
+      },
+      "number": "H1",
+      "artist": "Shin-ichi Yoshida",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard2/H1.png",
+        "large": "https://images.pokemontcg.io/ecard2/H1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ecard2-H1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 89.96,
+            "mid": 140.49,
+            "high": 141.91,
+            "market": 141.91,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "ex3-1",
+      "name": "Absol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Darkness"
+      ],
+      "attacks": [
+        {
+          "name": "Bad News",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If the number of cards in your opponent's hand is at least 6, choose a number of cards there, without looking, until your opponent has 5 cards left. Have your opponent discard the cards you chose."
+        },
+        {
+          "name": "Prize Count",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If you have more Prize cards left than your opponent, this attack does 20 damage plus 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex3",
+        "name": "Dragon",
+        "series": "EX",
+        "printedTotal": 97,
+        "total": 97,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "DR",
+        "releaseDate": "2003/09/18",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex3/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex3/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Naoyo Kimura",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        359
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex3/1.png",
+        "large": "https://images.pokemontcg.io/ex3/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex3-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 41.99,
+            "mid": 43.19,
+            "high": 44.0,
+            "market": 42.61,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 15.0,
+            "mid": 19.99,
+            "high": 35.0,
+            "market": 9.25,
+            "directLow": null
+          }
+        }
+      }
+    },
+    {
+      "id": "hgss4-1",
+      "name": "Aggron",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "140",
+      "types": [
+        "Metal"
+      ],
+      "evolvesFrom": "Lairon",
+      "attacks": [
+        {
+          "name": "Second Strike",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "If the Defending Pokémon already has any damage counters on it, this attack does 40 damage plus 40 more damage."
+        },
+        {
+          "name": "Guard Claw",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "During your opponent's next turn, any damage done to Aggron by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "set": {
+        "id": "hgss4",
+        "name": "HS—Triumphant",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "TM",
+        "releaseDate": "2010/11/03",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss4/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss4/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Holo",
+      "flavorText": "You can tell its age by the length of its iron horns. It claims an entire mountain as its territory.",
+      "nationalPokedexNumbers": [
+        306
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss4/1.png",
+        "large": "https://images.pokemontcg.io/hgss4/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss4-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 1.01,
+            "mid": 2.44,
+            "high": 5.0,
+            "market": 1.63,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 1.99,
+            "mid": 13.95,
+            "high": 168.9,
+            "market": 2.41,
+            "directLow": 13.95
+          }
+        }
+      }
+    },
+    {
+      "id": "ex12-1",
+      "name": "Aerodactyl",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "70",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Mysterious Fossil",
+      "abilities": [
+        {
+          "name": "Reactive Protection",
+          "text": "Any damage done to Aerodactyl by attacks from your opponent's Pokémon is reduced by 10 for each React Energy card attached to Aerodactyl (after applying Weakness and Resistance).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Blow",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each Energy attached to Aerodactyl."
+        },
+        {
+          "name": "Speed Stroke",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "During your opponent's next turn, prevent all effects, including damage, done to Aerodactyl by attacks from your opponent's Pokémon-ex."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "set": {
+        "id": "ex12",
+        "name": "Legend Maker",
+        "series": "EX",
+        "printedTotal": 92,
+        "total": 93,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "LM",
+        "releaseDate": "2006/02/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex12/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex12/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "Hajime Kusajima",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [
+        142
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex12/1.png",
+        "large": "https://images.pokemontcg.io/ex12/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex12-1",
+        "updatedAt": "2021/03/12",
+        "prices": {
+          "holofoil": {
+            "low": 10.0,
+            "mid": 14.04,
+            "high": 34.95,
+            "market": 15.45,
+            "directLow": null
+          },
+          "reverseHolofoil": {
+            "low": 45.0,
+            "mid": 45.0,
+            "high": 45.0,
+            "market": 4.96,
+            "directLow": null
+          }
+        }
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 10,
+  "count": 10,
+  "totalCount": 13223
 }

@@ -1,21 +1,27 @@
 {
-    "subtypes": [
-        "MEGA",
-        "Item",
-        "Level Up",
-        "Supporter",
-        "",
-        "EX",
-        "Technical Machine",
-        "Rocket's Secret Machine",
-        "Stadium",
-        "Restored",
-        "Stage 1",
-        "LEGEND",
-        "BREAK",
-        "Pokémon Tool",
-        "Stage 2",
-        "Special",
-        "Basic"
-    ]
+  "data": [
+    "BREAK",
+    "Baby",
+    "Basic",
+    "EX",
+    "GX",
+    "Goldenrod Game Corner",
+    "Item",
+    "LEGEND",
+    "Level-Up",
+    "MEGA",
+    "Pokémon Tool",
+    "Pokémon Tool F",
+    "Restored",
+    "Rocket's Secret Machine",
+    "Special",
+    "Stadium",
+    "Stage 1",
+    "Stage 2",
+    "Supporter",
+    "TAG TEAM",
+    "Technical Machine",
+    "V",
+    "VMAX"
+  ]
 }
