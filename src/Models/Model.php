@@ -2,7 +2,7 @@
 
 namespace Pokemon\Models;
 
-use Doctrine\Inflector\InflectorFactory;
+use Pokemon\Singularizer;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionProperty;
@@ -83,8 +83,6 @@ class Model
      */
     protected function parse($attribute, $value)
     {
-        $inflector = InflectorFactory::create()->build();
-
         if (is_object($value)) {
             switch ($attribute) {
                 case 'images':
@@ -104,7 +102,7 @@ class Model
                     break;
 
                 default:
-                    $class = '\\Pokemon\\Models\\' . ucfirst($inflector->singularize($attribute));
+                    $class = '\\Pokemon\\Models\\' . ucfirst(Singularizer::singularize($attribute));
             }
 
             if (class_exists($class)) {
