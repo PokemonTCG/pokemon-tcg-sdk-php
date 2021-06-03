@@ -15,7 +15,13 @@ class Singularizer
         }
 
         if (\class_exists(InflectorFactory::class)) {
-            return InflectorFactory::create()->build()->singularize($word);
+            static $inflector;
+
+            if ($inflector === null) {
+                $inflector = InflectorFactory::create()->build();
+            }
+
+            return $inflector->singularize($word);
         }
 
         return $word;
