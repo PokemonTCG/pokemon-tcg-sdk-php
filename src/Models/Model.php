@@ -96,11 +96,13 @@ class Model
                     break;
 
                 case 'prices':
-                    $class = '\\Pokemon\\Models\\Prices';
-                    // Little bit hacky, but if we have averageSellPrice, it's CardMarketPrices
-                    if (property_exists($value, 'averageSellPrice')) {
+                    // CardMarket API Data
+                    if (property_exists($value, 'averageSellPrice')) {//} && is_object($value->averageSellPrice)) {
                         $class = '\\Pokemon\\Models\\CardMarketPrices';
+                        break;
                     }
+                    // TCGPlayer API Data
+                    $class = '\\Pokemon\\Models\\Prices';
                     break;
 
                 case 'tcgplayer':

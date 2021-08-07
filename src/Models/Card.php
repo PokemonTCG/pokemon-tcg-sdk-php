@@ -138,7 +138,7 @@ class Card extends Model
     /**
      * @var CardMarket|null
      */
-    private $cardMarket;
+    private $cardmarket;
 
     /**
      * @return string
@@ -543,17 +543,17 @@ class Card extends Model
     /**
      * @return CardMarket|null
      */
-    public function getCardMarket(): ?CardMarket
+    public function getCardmarket(): ?CardMarket
     {
-        return $this->cardMarket;
+        return $this->cardmarket;
     }
 
     /**
      * @param  CardMarket|null  $cardMarket
      */
-    public function setCardMarket(?CardMarket $cardMarket): void
+    public function setCardmarket(?CardMarket $cardMarket): void
     {
-        $this->cardMarket = $cardMarket;
+        $this->cardmarket = $cardMarket;
     }
 
 }

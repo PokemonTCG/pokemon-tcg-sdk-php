@@ -109,6 +109,27 @@
             "directLow": null
           }
         }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pl1-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 1.16,
+          "lowPrice": 0.2,
+          "trendPrice": 1.75,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": 1.25,
+          "reverseHoloLow": 0.49,
+          "reverseHoloTrend": 1.7,
+          "lowPriceExPlus": 1.99,
+          "avg1": 0.75,
+          "avg7": 1.74,
+          "avg30": 1.65,
+          "reverseHoloAvg1": 1.5,
+          "reverseHoloAvg7": 1.91,
+          "reverseHoloAvg30": 1.81
+        }
       }
     },
     {
@@ -193,6 +214,27 @@
             "directLow": 0.34
           }
         }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/det1-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 0.39,
+          "lowPrice": 0.02,
+          "trendPrice": 0.45,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": 0.19,
+          "reverseHoloLow": 0.02,
+          "reverseHoloTrend": 0.43,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.5,
+          "avg7": 0.54,
+          "avg30": 0.38,
+          "reverseHoloAvg1": 0.5,
+          "reverseHoloAvg7": 0.24,
+          "reverseHoloAvg30": 0.33
+        }
       }
     },
     {
@@ -264,6 +306,27 @@
             "market": 6.14,
             "directLow": null
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/mcd19-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 1.26,
+          "lowPrice": 0.05,
+          "trendPrice": 1.12,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 1.71,
+          "lowPriceExPlus": 0.99,
+          "avg1": 0.8,
+          "avg7": 1.23,
+          "avg30": 1.26,
+          "reverseHoloAvg1": 0.5,
+          "reverseHoloAvg7": 1.71,
+          "reverseHoloAvg30": 1.37
         }
       }
     },
@@ -347,6 +410,27 @@
             "market": 0.69,
             "directLow": null
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/dv1-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 0.45,
+          "lowPrice": 0.1,
+          "trendPrice": 0.81,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": 0.4,
+          "reverseHoloTrend": 1.5,
+          "lowPriceExPlus": 0.5,
+          "avg1": 0.5,
+          "avg7": 0.87,
+          "avg30": 1.33,
+          "reverseHoloAvg1": 1.0,
+          "reverseHoloAvg7": 1.36,
+          "reverseHoloAvg30": 1.02
         }
       }
     },
@@ -436,6 +520,27 @@
             "market": 0.2,
             "directLow": 0.2
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy5-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 0.07,
+          "lowPrice": 0.02,
+          "trendPrice": 0.09,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": 0.2,
+          "reverseHoloTrend": 0.34,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.1,
+          "avg7": 0.08,
+          "avg30": 0.07,
+          "reverseHoloAvg1": 0.49,
+          "reverseHoloAvg7": 0.45,
+          "reverseHoloAvg30": 0.25
         }
       }
     },
@@ -529,6 +634,27 @@
             "directLow": null
           }
         }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex7-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 6.99,
+          "lowPrice": 0.55,
+          "trendPrice": 4.14,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": 9.99,
+          "reverseHoloTrend": 13.0,
+          "lowPriceExPlus": 1.99,
+          "avg1": 6.99,
+          "avg7": 3.25,
+          "avg30": 2.64,
+          "reverseHoloAvg1": 22.0,
+          "reverseHoloAvg7": 7.68,
+          "reverseHoloAvg30": 4.53
+        }
       }
     },
     {
@@ -617,6 +743,27 @@
             "market": 141.91,
             "directLow": null
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ecard2-H1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 13.3,
+          "lowPrice": 9.0,
+          "trendPrice": 18.43,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 14.11,
+          "lowPriceExPlus": 17.99,
+          "avg1": 12.99,
+          "avg7": 14.22,
+          "avg30": 11.66,
+          "reverseHoloAvg1": 39.99,
+          "reverseHoloAvg7": 18.13,
+          "reverseHoloAvg30": 18.1
         }
       }
     },
@@ -716,6 +863,27 @@
             "market": 9.25,
             "directLow": null
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex3-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 9.81,
+          "lowPrice": 1.79,
+          "trendPrice": 12.39,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": 2.35,
+          "reverseHoloLow": 1.79,
+          "reverseHoloTrend": 6.13,
+          "lowPriceExPlus": 6.99,
+          "avg1": 14.13,
+          "avg7": 15.87,
+          "avg30": 9.42,
+          "reverseHoloAvg1": 2.35,
+          "reverseHoloAvg7": 5.17,
+          "reverseHoloAvg30": 5.5
         }
       }
     },
@@ -825,6 +993,27 @@
             "directLow": 13.95
           }
         }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss4-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 1.39,
+          "lowPrice": 0.4,
+          "trendPrice": 1.96,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": 1.2,
+          "reverseHoloTrend": 1.59,
+          "lowPriceExPlus": 0.78,
+          "avg1": 1.7,
+          "avg7": 2.33,
+          "avg30": 1.82,
+          "reverseHoloAvg1": 1.2,
+          "reverseHoloAvg7": 1.65,
+          "reverseHoloAvg30": 1.47
+        }
       }
     },
     {
@@ -928,6 +1117,27 @@
             "market": 4.96,
             "directLow": null
           }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex12-1",
+        "updatedAt": "2021/08/06",
+        "prices": {
+          "averageSellPrice": 8.19,
+          "lowPrice": 0.8,
+          "trendPrice": 6.45,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": 12.23,
+          "reverseHoloLow": 2.5,
+          "reverseHoloTrend": 14.09,
+          "lowPriceExPlus": 8.0,
+          "avg1": 8.99,
+          "avg7": 8.37,
+          "avg30": 6.6,
+          "reverseHoloAvg1": 10.0,
+          "reverseHoloAvg7": 6.98,
+          "reverseHoloAvg30": 6.99
         }
       }
     }

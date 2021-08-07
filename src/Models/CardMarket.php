@@ -73,4 +73,24 @@ class CardMarket extends Model
         $this->cardMarketPrices = $cardMarketPrices;
     }
 
+    /**
+     * @param string $attribute
+     * @param mixed $value
+     *
+     * @return mixed|Model
+     */
+    protected function parse($attribute, $value)
+    {
+        if(is_object($value)) {
+            $cardMarketPrices = new CardMarketPrices();
+            $cardMarketPrices->fill($value);
+            $value = $cardMarketPrices;
+        }
+        $method = 'set' . ucfirst($attribute);
+        if (isset($this->methods[$method])) {
+            $this->{$method}($value);
+        }
+        return $value;
+    }
+
 }
