@@ -97,7 +97,7 @@ class Model
 
                 case 'prices':
                     // CardMarket API Data
-                    if (property_exists($value, 'averageSellPrice')) {//} && is_object($value->averageSellPrice)) {
+                    if (property_exists($value, 'averageSellPrice')) {
                         $class = '\\Pokemon\\Models\\CardMarketPrices';
                         break;
                     }
