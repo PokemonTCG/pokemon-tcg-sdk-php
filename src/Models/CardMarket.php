@@ -23,7 +23,7 @@ class CardMarket extends Model
     /**
      * @var CardMarketPrices|null
      */
-    private $cardMarketPrices;
+    private $prices;
 
     /**
      * @return string|null
@@ -62,15 +62,15 @@ class CardMarket extends Model
      */
     public function getPrices(): ?CardMarketPrices
     {
-        return $this->cardMarketPrices;
+        return $this->prices;
     }
 
     /**
-     * @param CardMarketPrices|null $cardMarketPrices
+     * @param CardMarketPrices|null $prices
      */
-    public function setPrices(?CardMarketPrices $cardMarketPrices)
+    public function setPrices(?CardMarketPrices $prices)
     {
-        $this->cardMarketPrices = $cardMarketPrices;
+        $this->prices= $prices;
     }
 
     /**
@@ -81,15 +81,21 @@ class CardMarket extends Model
      */
     protected function parse($attribute, $value)
     {
-        if(is_object($value)) {
-            $cardMarketPrices = new CardMarketPrices();
-            $cardMarketPrices->fill($value);
-            $value = $cardMarketPrices;
+        if (is_object($value)) {
+            switch ($attribute) {
+                case 'prices':
+                    $class = '\\Pokemon\\Models\\CardMarketPrices';
+                    break;
+            }
+
+            if (class_exists($class)) {
+                /** @var Model $model */
+                $model = new $class;
+                $model->fill($value);
+                $value = $model;
+            }
         }
-        $method = 'set' . ucfirst($attribute);
-        if (isset($this->methods[$method])) {
-            $this->{$method}($value);
-        }
+
         return $value;
     }
 
