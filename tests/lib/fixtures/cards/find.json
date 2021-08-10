@@ -91,6 +91,27 @@
           "directLow": 9.99
         }
       }
+    },
+    "cardmarket": {
+      "url": "https://prices.pokemontcg.io/cardmarket/xy7-57",
+      "updatedAt": "2021/08/06",
+      "prices": {
+        "averageSellPrice": null,
+        "lowPrice": null,
+        "trendPrice": 2.5,
+        "germanProLow": null,
+        "suggestedPrice": null,
+        "reverseHoloSell": null,
+        "reverseHoloLow": null,
+        "reverseHoloTrend": null,
+        "lowPriceExPlus": null,
+        "avg1": 2.5,
+        "avg7": 1.0,
+        "avg30": 1.0,
+        "reverseHoloAvg1": 0.5,
+        "reverseHoloAvg7": 0.5,
+        "reverseHoloAvg30": 0.5
+      }
     }
   }
 }

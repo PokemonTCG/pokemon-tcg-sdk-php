@@ -5,6 +5,8 @@ use Pokemon\Models\Ability;
 use Pokemon\Models\Attack;
 use Pokemon\Models\Card;
 use Pokemon\Models\CardImages;
+use Pokemon\Models\CardMarket;
+use Pokemon\Models\CardMarketPrices;
 use Pokemon\Models\Legalities;
 use Pokemon\Models\Pagination;
 use Pokemon\Models\Prices;
@@ -137,6 +139,13 @@ class CardTest extends TestCase
 
         $prices = $tcgplayer->getPrices();
         $this->assertInstanceOf(Prices::class, $prices);
+
+        $cardMarket = $card->getCardMarket();
+        $this->assertInstanceOf(CardMarket::class, $cardMarket);
+        $this->assertEquals('https://prices.pokemontcg.io/cardmarket/xy7-57', $cardMarket->getUrl());
+
+        $cardMarketPrices = $cardMarket->getPrices();
+        $this->assertInstanceOf(CardMarketPrices::class, $cardMarketPrices);
 
         $holofoil = $prices->getHolofoil();
         $this->assertInstanceOf(PriceTiers::class, $holofoil);

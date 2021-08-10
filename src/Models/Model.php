@@ -103,6 +103,10 @@ class Model
                     $class = '\\Pokemon\\Models\\TCGPlayer';
                     break;
 
+                case 'cardmarket':
+                    $class = '\\Pokemon\\Models\\CardMarket';
+                    break;
+
                 default:
                     $class = '\\Pokemon\\Models\\' . ucfirst($inflector->singularize($attribute));
             }

@@ -136,6 +136,11 @@ class Card extends Model
     private $tcgplayer;
 
     /**
+     * @var CardMarket|null
+     */
+    private $cardmarket;
+
+    /**
      * @return string
      */
     public function getId(): string
@@ -533,6 +538,22 @@ class Card extends Model
     public function setTcgplayer(?TCGPlayer $tcgplayer)
     {
         $this->tcgplayer = $tcgplayer;
+    }
+
+    /**
+     * @return CardMarket|null
+     */
+    public function getCardmarket(): ?CardMarket
+    {
+        return $this->cardmarket;
+    }
+
+    /**
+     * @param  CardMarket|null  $cardMarket
+     */
+    public function setCardmarket(?CardMarket $cardMarket): void
+    {
+        $this->cardmarket = $cardMarket;
     }
 
 }
