@@ -10,6 +10,7 @@ use Pokemon\Models\Model;
 use Pokemon\Models\Pagination;
 use Pokemon\Pokemon;
 use Pokemon\Resources\Interfaces\QueriableResourceInterface;
+use Pokemon\Singularizer;
 use stdClass;
 
 /**
@@ -19,10 +20,6 @@ use stdClass;
  */
 class QueryableResource extends JsonResource implements QueriableResourceInterface
 {
-
-    const DEFAULT_PAGE = 1;
-    const DEFAULT_PAGE_SIZE = 250;
-
     /**
      * @var array
      */
@@ -143,7 +140,7 @@ class QueryableResource extends JsonResource implements QueriableResourceInterfa
     protected function transform(stdClass $data): ?Model
     {
         $model = null;
-        $class = '\\Pokemon\\Models\\' . ucfirst($this->inflector->singularize($this->resource));
+        $class = '\\Pokemon\\Models\\' . ucfirst(Singularizer::singularize($this->resource));
 
         if (class_exists($class)) {
             /** @var Model $model */
